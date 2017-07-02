@@ -1,0 +1,32 @@
+language: java
+
+jdk:
+- oraclejdk8
+
+sudo: false
+
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+  - "$HOME/.sonar/cache"
+
+env:
+  global:
+  - GH_REF: github.com:MrAsimov/patterns.git
+  - secure: SpZZnoUCIgygrZtk2eTNm8UbruHyHt65OMIZczwBGBZOxqyu1IylycojmGAEGOu378HU6nukcyPpErIGCPsCuePo1dt2geEHMHhotRtMtdCWs2kmMdm/V5eAHC1P33XBJyUoVd3KSzXvtzY8MibvRpxLk3jgXU6xoU5FtTHUgL3/2DFdUMqo1X7tY/YALDG4eCjw0TLdJ0Rz55NL3uR+tjtyL27l9mm3NfFbNHT+u+NEH3MwjYZWiKdV5qVfU1hMRbA6nZEp+JWWiSNog0bCH3QyoI3VU380izkq4gjMGnG6WWAdQe9CFSut3ZtvR9aaswSGK4wFxIqlwwksYIjLDxsWh+kjd7pS950sS3up10Z2N+phvHioi1h6wpvfR6BegPqYJL0YGZcFn9G3XsQ9kk01idwU1rZ5StEAlKP1TfdquzQCHTAcnvakXMjUo2skBQ9zDgePgCHxOPRjDKTr+zSfPi9X9vApVSeGKmEV1QSW7Jjw+Qj3fR9DSMeMfRN7OOkpq9ucx0ZplmvW6Y+qAe7sFA5n+XeerJhRyLUKgNWIKSczuWkBp18RNkk3BTu86OoFKG/CBNU+lKzG7HcIZUqhaA9ACWkluNAVMmlGaMLL5P1ywLEvXNE+XNc6hz2cn9wc/Uw9d4Oaxf6xSd/7h0SJxc7ig7pf4SRG6al881E=
+
+install:
+- mvn clean install
+
+addons:
+  apt:
+    packages:
+    - oracle-java8-installer
+  sonarcloud:
+    organization: mrasimov-github
+    token:
+      secure: dY1jD51Vgx4NKWYUZK6Krh9Zu8Sxl5OQzH+Qh4c2bOoxv4XdUNHMBAqv90/VRdfJKzZ0lIlO01L5s87xa8lJoABw8a8V1wh5HMjxzj9J1Q/eWoDDLjXkkXn9WFsvmBk6dHoKWlmf5m/Wsa492MPuiuSd9t35cGLfq635u6IGNrQkeqdHjnJgy77p266LU+1F93fnlDcOAs3bhmH7BjqMXefaTzczDbUVZ9v4MSewrrXktbtJYJdMU/6te8qV42AWnYhxQwq2EVw5DdGNPQv4pOE/gOFC5Nx/GpMf6W1Xhml0Md3V9Box7IiTLSfOZVQcbubJ2SyI/R81Q2rrRgp0AwIg7aKL38T2HbkcBxu/39ewEKssi8h2McJrumOeO86DGNCp9luPj+WMeCAmYPffyy6yhF9+fP5Gaqnt63lhEQBWBqbXEo98XUj83vxLlIM510a9vRF76F5Lrm+PWBX2uwDOj4e2d5nxBKpUllaR9EYwxbCESIUrUfiVWt9uuzmesvwZKMLanXL32moSF+LJsHYSBKgJ+X9SJDQR1cunevYuEVWhhWQp1nS2Mes5e8jHXUY/ndIqZkXkHRjlZdbhWgAAmLHcspg8tGuIy9FJVpCKJYYCMLpOM87wqtrrsjMZCFLGyV20mbJIwOu2YPuYJ2NvsK93CYX3+cEak7dYu24=
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
