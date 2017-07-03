@@ -41,7 +41,7 @@ I want to share architectural patterns, design patterns and other patterns in my
 
 #### Behavioural patterns - Charactize the ways in which classes or objects interact and distribute responsibility
 
-[Chain of Responsibility](./) - TODO
+[Chain Of Responsibility](./) - TODO
 
 [Command](./) - TODO
 
