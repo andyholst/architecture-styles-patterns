@@ -9,7 +9,7 @@ I want to share architectural patterns, design patterns and other patterns in my
 
 ## Patterns
 
-## Design patterns
+### Design patterns
 
 [Builder pattern](./builder/README.md)
 
