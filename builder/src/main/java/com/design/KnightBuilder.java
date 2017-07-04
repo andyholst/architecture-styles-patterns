@@ -57,7 +57,7 @@ public class KnightBuilder implements SoldierBuilder {
         initArmor();
 
         if (shield && !knight.getArmor().contains("shield")) {
-            knight.setArmor("shielf " + knight.getArmor());
+            knight.setArmor("shield " + knight.getArmor());
         }
         return this;
     }

@@ -32,15 +32,26 @@ import static org.junit.Assert.assertNotNull;
 public class KnightTest {
 
     @Test
-    public void createKnightTest() {
-        Knight knight = new KnightBuilder().withName("Sir Arthur").withArmor(true).withShield(false).withSword(true).withKnife(true).build();
+    public void createKnightTrueTest() {
+        Knight knight = new KnightBuilder().withName("Sir Arthur").withArmor(true).withShield(true).withSword(true).withKnife(true).build();
 
         assertNotNull(knight);
         assertEquals("Sir Arthur", knight.getName());
         assertEquals(true, knight.isKnightArmor());
-        assertEquals(false, knight.isShield());
+        assertEquals(true, knight.isShield());
         assertEquals(true, knight.isSword());
         assertEquals(true, knight.isKnife());
     }
 
+    @Test
+    public void createKnightFalseTest() {
+        Knight knight = new KnightBuilder().withName("Sir Arthur").build();
+
+        assertNotNull(knight);
+        assertEquals("Sir Arthur", knight.getName());
+        assertEquals(false, knight.isKnightArmor());
+        assertEquals(false, knight.isShield());
+        assertEquals(false, knight.isSword());
+        assertEquals(false, knight.isKnife());
+    }
 }
