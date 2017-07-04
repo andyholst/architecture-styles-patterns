@@ -40,6 +40,7 @@ public class KnightBuilder implements SoldierBuilder {
         knight.setName(name);
         return this;
     }
+
     public KnightBuilder withArmor(boolean armor) {
         initArmor();
 

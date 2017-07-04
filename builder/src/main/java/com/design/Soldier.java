@@ -25,8 +25,11 @@
 package com.design;
 
 public interface Soldier {
-    public void setWeapon(String weapon);
-    public void setArmor(String knightArmor);
     public String getWeapon();
+
+    public void setWeapon(String weapon);
+
     public String getArmor();
+
+    public void setArmor(String knightArmor);
 }
