@@ -37,7 +37,7 @@ public class KnightTest {
 
         assertNotNull(knight);
         assertEquals("Sir Arthur", knight.getName());
-        assertEquals(true, knight.isArmor());
+        assertEquals(true, knight.isKnightArmor());
         assertEquals(false, knight.isShield());
         assertEquals(true, knight.isSword());
         assertEquals(true, knight.isKnife());

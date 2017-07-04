@@ -24,32 +24,67 @@
 
 package com.design;
 
-public class KnightBuilder extends Knight {
+import org.apache.commons.lang3.StringUtils;
+
+public class KnightBuilder implements SoldierBuilder {
+
+    Knight knight;
+
+    public KnightBuilder() {
+        knight = new Knight();
+    }
+
     public KnightBuilder withName(String name) {
-        this.name = name;
+        knight.setName(name);
         return this;
     }
     public KnightBuilder withArmor(boolean armor) {
-        this.armor = armor;
+        initArmor();
+
+        if (armor && !knight.getArmor().contains("Knight armor")) {
+            knight.setArmor("Knight armor " + knight.getArmor());
+        }
         return this;
     }
 
+    private void initArmor() {
+        if (StringUtils.isBlank(knight.getArmor())) {
+            knight.setArmor("");
+        }
+    }
+
     public KnightBuilder withShield(boolean shield) {
-        this.shield = shield;
+        initArmor();
+
+        if (shield && !knight.getArmor().contains("shield")) {
+            knight.setArmor("shielf " + knight.getArmor());
+        }
         return this;
     }
 
     public KnightBuilder withSword(boolean sword) {
-        this.sword = sword;
+        initWeapon();
+        if (sword && !knight.getWeapon().contains("sword")) {
+            knight.setWeapon("sword " + knight.getWeapon());
+        }
         return this;
     }
 
+    private void initWeapon() {
+        if (StringUtils.isBlank(knight.getWeapon())) {
+            knight.setWeapon("");
+        }
+    }
+
     public KnightBuilder withKnife(boolean knife) {
-        this.knife = knife;
+        initWeapon();
+        if (knife && !knight.getWeapon().contains("knife")) {
+            knight.setWeapon("knife " + knight.getWeapon());
+        }
         return this;
     }
 
     public Knight build() {
-        return this;
+        return knight;
     }
 }
