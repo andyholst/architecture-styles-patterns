@@ -54,4 +54,48 @@ public class KnightTest {
         assertEquals(false, knight.isSword());
         assertEquals(false, knight.isKnife());
     }
+
+    @Test
+    public void createKnightArmorTest() {
+        Knight knight = new KnightBuilder().withArmor(true).build();
+
+        assertNotNull(knight);
+        assertEquals(true, knight.isKnightArmor());
+        assertEquals(false, knight.isShield());
+        assertEquals(false, knight.isSword());
+        assertEquals(false, knight.isKnife());
+    }
+
+    @Test
+    public void createKnightShieldTest() {
+        Knight knight = new KnightBuilder().withShield(true).build();
+
+        assertNotNull(knight);
+        assertEquals(false, knight.isKnightArmor());
+        assertEquals(true, knight.isShield());
+        assertEquals(false, knight.isSword());
+        assertEquals(false, knight.isKnife());
+    }
+
+    @Test
+    public void createKnightSwordTest() {
+        Knight knight = new KnightBuilder().withSword(true).build();
+
+        assertNotNull(knight);
+        assertEquals(false, knight.isKnightArmor());
+        assertEquals(false, knight.isShield());
+        assertEquals(true, knight.isSword());
+        assertEquals(false, knight.isKnife());
+    }
+
+    @Test
+    public void createKnightKnifeTest() {
+        Knight knight = new KnightBuilder().withKnife(true).build();
+
+        assertNotNull(knight);
+        assertEquals(false, knight.isKnightArmor());
+        assertEquals(false, knight.isShield());
+        assertEquals(false, knight.isSword());
+        assertEquals(true, knight.isKnife());
+    }
 }
