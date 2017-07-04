@@ -8,9 +8,9 @@
 I want to share architectural patterns, design patterns and other patterns in my quest for exploring patterns.
 
 # Table of Contents
-1. [Design patterns](# Design patterns)
+1. [Design patterns](#designpatterns)
 
-# Design patterns
+# Design patterns <a name="designpatterns"></a>
 
 ## Creational patterns - Object creation
 
