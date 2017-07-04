@@ -32,6 +32,8 @@ public class KnightBuilder implements SoldierBuilder {
 
     public KnightBuilder() {
         knight = new Knight();
+        initWeapon();
+        initArmor();
     }
 
     public KnightBuilder withName(String name) {

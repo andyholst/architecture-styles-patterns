@@ -24,42 +24,40 @@
 
 package com.design;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class Knight extends Person implements Soldier {
 
     private String armor;
     private String weapon;
 
     public boolean isKnightArmor() {
-        return StringUtils.isNotBlank(armor) && armor.contains("Knight armor");
+        return armor.contains("Knight armor");
     }
 
     public boolean isSword() {
-        return StringUtils.isNotBlank(weapon) && weapon.contains("sword");
+        return weapon.contains("sword");
     }
 
     public boolean isKnife() {
-        return StringUtils.isNotBlank(weapon) && weapon.contains("knife");
+        return weapon.contains("knife");
     }
 
     public boolean isShield() {
-        return StringUtils.isNotBlank(armor) && armor.contains("shield");
-    }
-
-    public void setWeapon(String weapon) {
-        this.weapon = weapon;
-    }
-
-    public void setArmor(String armor) {
-        this.armor = armor;
+        return armor.contains("shield");
     }
 
     public String getWeapon() {
         return weapon;
     }
 
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
     public String getArmor() {
         return armor;
+    }
+
+    public void setArmor(String armor) {
+        this.armor = armor;
     }
 }
