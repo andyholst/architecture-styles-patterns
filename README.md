@@ -5,7 +5,9 @@
 
 # Introduction
 
-I want to share architectural patterns, design patterns and other patterns in my quest for exploring patterns.
+I want to explore architectural patterns, design patterns and other patterns in my quest for exploring patterns. I am 
+using the MIT license and want to contribute to learn best practises about patterns and how to document them for anybody
+to learn from.
 
 # Table of Contents
 1. [Design patterns](#designpatterns)
