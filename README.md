@@ -12,6 +12,8 @@ I want to share architectural patterns, design patterns and other patterns in my
 
 # Design patterns <a name="designpatterns"></a>
 
+Design patterns that was mainly written by the Gang of Four guys.
+
 ## Creational patterns - Object creation
 
 [Abstract Factory](./) - TODO
