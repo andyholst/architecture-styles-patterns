@@ -25,5 +25,5 @@
 package com.design;
 
 public interface SoldierBuilder {
-    public <T extends Soldier> T build();
+    public Soldier build();
 }
