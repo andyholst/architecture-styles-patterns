@@ -9,12 +9,18 @@ I want to share architectural patterns, design patterns and other patterns in my
 
 # Table of Contents
 1. [Design patterns](#designpatterns)
+    1. [Creational patterns](#creational)
+    2. [Structural patterns](#structural)
+    3. [Behavioural patterns](#behavioural)
+2. [Architectural patterns](#architectural)
+3. [Design pattern explaination](#designpatternexplination)
+4. [Reference](#reference)
 
 # Design patterns <a name="designpatterns"></a>
 
 Design patterns that was mainly written by the Gang of Four guys.
 
-## Creational patterns - Object creation
+## Creational patterns - Object creation <a name="creational"></a>
 
 [Abstract Factory](./) - TODO
 
@@ -26,7 +32,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Singleton](./) - TODO
 
-## Structural patterns - Composition of classes or objects
+## Structural patterns - Composition of classes or objects <a name="structural"></a>
 
 [Adapter](./) - TODO
 
@@ -42,7 +48,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Proxy](./) - TODO
 
-## Behavioural patterns - Charactize the ways in which classes or objects interact and distribute responsibility
+## Behavioural patterns - Charactize the ways in which classes or objects interact and distribute responsibility <a name="behavioural"></a>
 
 [Chain Of Responsibility](./) - []TODO
 
@@ -66,7 +72,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Visitor](./) - TODO
 
-# Architectural patterns
+# Architectural patterns <a name="architectural"></a>
 
 [Front Controller](./) - TODO 
 
@@ -96,7 +102,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Inversion Of Control](./) -TODO
 
-# Design pattern explaination
+# Design pattern explaination <a name="designpatternexplination"></a>
 
 Explaination of what the design patterns might be used to [1].
 
@@ -157,6 +163,6 @@ Sometimes you have to modify a class that can’t be modified conveniently. Perh
 have it (as may be the case with a commercial class library). Or maybe any change would require modifying lots of 
 existing subclasses. Design patterns offer ways to modify classes in such circumstances.
 
-# Reference
+# Reference <a name="reference"></a>
 
 [1]: Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.
