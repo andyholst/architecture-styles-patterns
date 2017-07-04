@@ -57,6 +57,19 @@ public class KnightTest {
     }
 
     @Test
+    public void createKnightWithFalseTest() {
+        Knight knight = new KnightBuilder().withName("Sir Arthur").withArmor(false).withShield(false).withSword(false)
+                .withKnife(false).build();
+
+        assertNotNull(knight);
+        assertEquals("Sir Arthur", knight.getName());
+        assertEquals(false, knight.isKnightArmor());
+        assertEquals(false, knight.isShield());
+        assertEquals(false, knight.isSword());
+        assertEquals(false, knight.isKnife());
+    }
+
+    @Test
     public void createKnightDuplicatedWithTest() {
         Knight knight = new KnightBuilder().withName("Sir Arthur").withArmor(true).withShield(true).withSword(true)
                 .withKnife(true).withArmor(true).withShield(true).withSword(true).withKnife(true).build();
