@@ -31,7 +31,7 @@ class ClientCore {
         if (StringUtils.isBlank(message)) {
             return "You are not sending any message";
         } else {
-            return "You are indeed sending a messag";
+            return "You are indeed sending a message";
         }
     }
 }
