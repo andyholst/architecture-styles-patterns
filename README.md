@@ -170,4 +170,5 @@ existing subclasses. Design patterns offer ways to modify classes in such circum
 # Reference <a name="reference"></a>
 
 [1]: Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.
+
 [2]: Just Enough Software Architecture by George Fairbanks
