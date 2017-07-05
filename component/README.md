@@ -1,10 +1,11 @@
 ## Component pattern
 
 ## Intent
-To use architecture evident coding style. To guide the developer to the concept of an defining an interface as an 
+To use architecture evident coding style. To guide the developer to the concept of defining an interface as an 
 component, and to make clear of the isolation of the other classes that implements the component only accesible by the 
 component. This example demonstrated a simplified component. A component interface does not need to have 
-abstract methods, the component interface could be empty, just for guidance of defining a component for developers.
+abstract methods, the component interface could be empty, just for guidance of defining a component for developers. 
+Demonstrates runtime behavior.
 
 ## Applicability
 To guide the developer to follow the architecture by defining the components as an interface (with accesible methods),
