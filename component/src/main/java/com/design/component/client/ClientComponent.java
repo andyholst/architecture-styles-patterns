@@ -32,6 +32,7 @@ public class ClientComponent implements Component {
 
     private ClientCore clientCore;
     private Component coreComponent;
+    private byte[] message;
 
     public ClientComponent() {
         clientCore = new ClientCore();
@@ -47,6 +48,10 @@ public class ClientComponent implements Component {
     }
 
     public void recieveMessage(byte[] message) {
-        // Not yet implemented
+        this.message = message;
+    }
+
+    public byte[] getRecievedMessage() {
+        return this.message;
     }
 }

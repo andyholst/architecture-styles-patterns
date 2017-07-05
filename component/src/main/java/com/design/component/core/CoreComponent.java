@@ -29,13 +29,14 @@ import com.design.component.icomponent.Component;
 
 public class CoreComponent implements Component {
     private byte[] message;
+    private Component clientComponent;
 
     public void attachComponent(Component component) {
-        // Not yet implemented
+        clientComponent = component;
     }
 
     public void sendMessage(byte[] message) {
-        // Not yet implemented
+        clientComponent.recieveMessage(message);
     }
 
     public void recieveMessage(byte[] message) {

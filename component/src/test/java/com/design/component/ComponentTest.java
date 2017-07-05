@@ -52,9 +52,18 @@ public class ComponentTest {
 
         clientComponent.attachComponent(coreComponent);
 
+        clientComponent.sendMessage("".getBytes());
+
         clientComponent.sendMessage(jsonMessage.getBytes());
 
         assertEquals(jsonMessage, new String(coreComponent.getRecievedMessage(), StandardCharsets.UTF_8));
+
+        coreComponent.attachComponent(clientComponent);
+
+        coreComponent.sendMessage(jsonMessage.getBytes());
+
+        assertEquals(jsonMessage, new String(clientComponent.getRecievedMessage(), StandardCharsets.UTF_8));
+
     }
 
 }
