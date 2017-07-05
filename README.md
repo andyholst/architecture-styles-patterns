@@ -76,6 +76,8 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 # Architectural patterns <a name="architectural"></a>
 
+[Component](./component/README.md)
+
 [Front Controller](./) - TODO 
 
 [Interceptor](./) - TODO 
@@ -168,3 +170,4 @@ existing subclasses. Design patterns offer ways to modify classes in such circum
 # Reference <a name="reference"></a>
 
 [1]: Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.
+[2]: Just Enough Software Architecture by George Fairbanks

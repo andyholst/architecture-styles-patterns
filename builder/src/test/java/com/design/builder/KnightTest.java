@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.design;
+package com.design.builder;
 
 import org.junit.Test;
 

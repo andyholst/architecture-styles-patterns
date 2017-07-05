@@ -22,8 +22,39 @@
  * SOFTWARE.
  */
 
-package com.design;
+package com.design.component;
 
-public interface SoldierBuilder {
-    public Soldier build();
+import com.design.component.client.ClientComponent;
+import com.design.component.core.CoreComponent;
+import org.junit.Test;
+
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.Assert.assertEquals;
+
+public class ComponentTest {
+    @org.junit.Before
+    public void setUp() throws Exception {
+    }
+
+    @org.junit.After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void testComponentCommunication() {
+
+        String jsonMessage = "{\"string\": \"This is a string\"}";
+
+        ClientComponent clientComponent = new ClientComponent();
+
+        CoreComponent coreComponent = new CoreComponent();
+
+        clientComponent.attachComponent(coreComponent);
+
+        clientComponent.sendMessage(jsonMessage.getBytes());
+
+        assertEquals(jsonMessage, new String(coreComponent.getRecievedMessage(), StandardCharsets.UTF_8));
+    }
+
 }

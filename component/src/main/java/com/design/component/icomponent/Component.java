@@ -22,14 +22,12 @@
  * SOFTWARE.
  */
 
-package com.design;
+package com.design.component.icomponent;
 
-public interface Soldier {
-    public String getWeapon();
+public interface Component {
+    public void attachComponent(Component component);
 
-    public void setWeapon(String weapon);
+    public void sendMessage(byte[] message);
 
-    public String getArmor();
-
-    public void setArmor(String knightArmor);
+    public void recieveMessage(byte[] message);
 }

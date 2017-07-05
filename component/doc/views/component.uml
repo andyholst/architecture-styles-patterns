@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.design.component</OriginalElement>
+  <nodes>
+    <node x="173.4375" y="0.0">com.design.component.icomponent.Component</node>
+    <node x="373.0" y="157.0">com.design.component.client.ClientComponent</node>
+    <node x="0.0" y="146.0">com.design.component.core.CoreComponent</node>
+    <node x="569.015625" y="33.0">com.design.component.client.ClientCore</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.design.component.client.ClientComponent" target="com.design.component.icomponent.Component">
+      <point x="-41.625" y="-48.0" />
+      <point x="497.875" y="121.0" />
+      <point x="450.9375" y="121.0" />
+      <point x="111.0" y="48.0" />
+    </edge>
+    <edge source="com.design.component.client.ClientComponent" target="com.design.component.client.ClientCore">
+      <point x="124.875" y="-48.0" />
+      <point x="664.375" y="121.0" />
+      <point x="654.515625" y="121.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="com.design.component.core.CoreComponent" target="com.design.component.icomponent.Component">
+      <point x="0.0" y="-59.0" />
+      <point x="176.5" y="121.0" />
+      <point x="228.9375" y="121.0" />
+      <point x="-111.0" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="129.5" y="152.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

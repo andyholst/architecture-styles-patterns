@@ -22,42 +22,14 @@
  * SOFTWARE.
  */
 
-package com.design;
+package com.design.builder;
 
-public class Knight extends Person implements Soldier {
+public interface Soldier {
+    public String getWeapon();
 
-    private String armor;
-    private String weapon;
+    public void setWeapon(String weapon);
 
-    public boolean isKnightArmor() {
-        return armor.contains("Knight armor");
-    }
+    public String getArmor();
 
-    public boolean isSword() {
-        return weapon.contains("sword");
-    }
-
-    public boolean isKnife() {
-        return weapon.contains("knife");
-    }
-
-    public boolean isShield() {
-        return armor.contains("shield");
-    }
-
-    public String getWeapon() {
-        return weapon;
-    }
-
-    public void setWeapon(String weapon) {
-        this.weapon = weapon;
-    }
-
-    public String getArmor() {
-        return armor;
-    }
-
-    public void setArmor(String armor) {
-        this.armor = armor;
-    }
+    public void setArmor(String knightArmor);
 }

@@ -1,41 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Diagram>
   <ID>JAVA</ID>
-  <OriginalElement>com.design</OriginalElement>
+  <OriginalElement>com.design.builder</OriginalElement>
   <nodes>
-    <node x="272.0" y="22.0">com.design.Person</node>
-    <node x="105.0" y="419.0">com.design.SoldierBuilder</node>
-    <node x="0.0" y="521.0">com.design.KnightBuilder</node>
-    <node x="67.0" y="168.0">com.design.Knight</node>
-    <node x="0.0" y="0.0">com.design.Soldier</node>
+    <node x="380.25" y="22.0">com.design.builder.Person</node>
+    <node x="0.0" y="245.0">com.design.builder.SoldierBuilder</node>
+    <node x="108.25000000000003" y="0.0">com.design.builder.Soldier</node>
+    <node x="62.75000000000006" y="424.0">com.design.builder.KnightBuilder</node>
+    <node x="176.00000000000003" y="168.0">com.design.builder.Knight</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.design.Knight" target="com.design.Person">
-      <point x="90.5" y="-103.0" />
-      <point x="338.5" y="143.0" />
-      <point x="370.0" y="143.0" />
-      <point x="0.0" y="37.0" />
-    </edge>
-    <edge source="com.design.Knight" target="com.design.Soldier">
+    <edge source="com.design.builder.Knight" target="com.design.builder.Soldier">
       <point x="-90.5" y="-103.0" />
-      <point x="157.5" y="143.0" />
-      <point x="126.0" y="143.0" />
+      <point x="266.5" y="143.0" />
+      <point x="234.25000000000003" y="143.0" />
       <point x="0.0" y="59.0" />
     </edge>
-    <edge source="com.design.KnightBuilder" target="com.design.SoldierBuilder">
-      <point x="0.0" y="-81.0" />
+    <edge source="com.design.builder.KnightBuilder" target="com.design.builder.SoldierBuilder">
+      <point x="-135.33333333333337" y="-103.0" />
+      <point x="130.41666666666669" y="399.0" />
+      <point x="78.0" y="399.0" />
       <point x="0.0" y="26.0" />
     </edge>
+    <edge source="com.design.builder.Knight" target="com.design.builder.Person">
+      <point x="90.5" y="-103.0" />
+      <point x="447.5" y="143.0" />
+      <point x="478.25" y="143.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.design.builder.KnightBuilder" target="com.design.builder.Knight">
+      <point x="-2.8421709430404007E-14" y="-103.0" />
+      <point x="-90.5" y="103.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.8776671408250356" x="234.0" y="341.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="150.5" y="332.5" />
   <SelectedNodes>
-    <node>com.design.Knight</node>
+    <node>com.design.builder.Knight</node>
   </SelectedNodes>
   <Categories>
     <Category>Methods</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
-  <VISIBILITY>public</VISIBILITY>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 
