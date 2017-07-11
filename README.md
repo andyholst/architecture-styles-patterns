@@ -33,45 +33,43 @@ to learn from.
 
 [Component](./component/README.md)
 
-[Monolithic application](./README.md) - TODO
-
 [Layered](./README.md) - TODO
+
+[Monolithic application](./README.md) - TODO
 
 [Pipes And Filters](./README.md) - TODO
 
 ## Shared memory
 
-[Data-Centric](./README.md) - TODO
-
 [Blackboard](./README.md) - TODO
+
+[Data-Centric](./README.md) - TODO
 
 [Rule-Based](./README.md) - TODO
 
 ## Messaging
 
+[Asynchronous Messaging](./README.md) - TODO
+
 [Event-Driven/Implicit Invocation](./README.md) - TODO
 
 [Publish-Subscribe](./README.md) - TODO
 
-[Asynchronous Messaging](./README.md) - TODO
-
 ## Adapative systems
 
-[Plug-ins](./README.md) - TODO
+[Domain Specific Languages](./README.md) - TODO
 
 [Microkernel](./README.md) - TODO
 
-[Reflection](./README.md) - TODO
+[Plug-ins](./README.md) - TODO
 
-[Domain Specific Languages](./README.md) - TODO
+[Reflection](./README.md) - TODO
 
 ## Distributed systems
 
 [Client-Server](./README.md) - TODO
 
-[Shared Nothing Architecture](./README.md) - TODO
-
-[Space-Based Architecture](./README.md) - TODO
+[Cloud Computing](./README.md) - TODO
 
 [Object Request Broker](./README.md) - TODO
 
@@ -81,35 +79,45 @@ to learn from.
 
 [Service-Oriented](./README.md) - TODO
 
-[Cloud Computing](./README.md) - TODO
+[Shared Nothing Architecture](./README.md) - TODO
+
+[Space-Based Architecture](./README.md) - TODO
 
 # Architectural patterns <a name="architectural"></a>
 
-[Front Controller](./README.md) - TODO 
-
-[Interceptor](./README.md) - TODO 
-
-[Model View Controller](./README.md) - TODO
-
-[N-Tier](./README.md) - TODO
-
-[Specification](./README.md) - TODO
-  
-[Naked Objects](./README.md) - TODO 
-
-[Service Locator](./README.md) - TODO
-
 [Active Record](./README.md) - TODO
 
-[Identity Map](./README.md) - TODO
+[ADR](./README.md) - TODO
 
-[Data Access Object](./README.md) - TODO 
+[Blackboard](./README.md) - TODO
+
+[Data Access Object](./README.md) - TODO
 
 [Data Transfer Object](./README.md) - TODO
 
-[ADR](./README.md) - TODO 
+[Front Controller](./README.md) - TODO
 
-[Inversion Of Control](./README.md) -TODO
+[Identity Map](./README.md) - TODO
+
+[Interceptor](./README.md) - TODO
+
+[Inversion Of Control](./README.md) - TODO
+
+[Model View Controller](./README.md) - TODO
+
+[Multilayered Architecture](./README.md) - TODO
+
+[N-Tier](./README.md) - TODO
+
+[Naked Objects](./README.md) - TODO
+
+[Presentation–Abstraction–Control](./README.md) - TODO
+
+[Sensor-Controller-Actuator](./README.md) - TODO
+
+[Service Locator](./README.md) - TODO
+
+[Specification](./README.md) - TODO
 
 # Design patterns <a name="designpatterns"></a>
 
@@ -123,7 +131,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Factory Method](./README.md) - TODO
 
-[Prototype](./README.md) - TODO 
+[Prototype](./README.md) - TODO
 
 [Singleton](./README.md) - TODO
 
@@ -139,7 +147,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Facade](./README.md) - TODO
 
-[Flyweight](./README.md) - TODO 
+[Flyweight](./README.md) - TODO
 
 [Proxy](./README.md) - TODO
 
