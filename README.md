@@ -3,10 +3,8 @@
 The ways you should know about to be a solution architect aka software architect.
 
 The examples I will show will reflect the styles, tactics and patterns, both architectural 
-pattern and design patterns so models can be viewed from the domain, design and the code perspective.
- 
- I will use some good model-driven engineering tool so generate the abstractions of the domain and design model, and 
- implement the details (interfaces/component/module) in the code model.
+pattern and design patterns, you can view the uml diagrams of the implementations. I will do 
+architecture-evident-coding style to express the styles, tactics and patterns.
 
 [![Build Status](https://travis-ci.org/MrAsimov/patterns.svg?branch=master)](https://travis-ci.org/MrAsimov/patterns)
 [SonarQube](https://sonarcloud.io/dashboard?id=com.design%3Apatterns)
