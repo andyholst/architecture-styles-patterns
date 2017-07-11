@@ -1,22 +1,115 @@
-# Patterns implemented in Java
+# Styles, tactics and patterns with model-driven engineering aka model-driven architecture
+
+The ways you should know about to be a solution architect aka software architect.
+
+The examples I will show I am going to do my best to reflect the styles, tactics and patterns, both architectural 
+pattern and design patterns so models can be viewed with from the domain, design and code perspective.
+ 
+ I will use some good model-driven engineering tool so generate the abstractions of the domain and design model, and 
+ implement the details (interfaces/component/module) in the code model.
 
 [![Build Status](https://travis-ci.org/MrAsimov/patterns.svg?branch=master)](https://travis-ci.org/MrAsimov/patterns)
 [SonarQube](https://sonarcloud.io/dashboard?id=com.design%3Apatterns)
 
 # Introduction
 
-I want to explore architectural patterns, design patterns and other patterns in my quest for exploring patterns. I am 
+I am exploring architectural styles, tactics and patterns and inner detail patterns like design patterns and otherI am 
 using the MIT license and want to contribute to learn best practises about patterns and how to document them for anybody
 to learn from.
 
 # Table of Contents
-1. [Design patterns](#designpatterns)
+1. [Archtitectural styles](#styles)
+2. [Architectural patterns](#architectural)
+3. [Design patterns](#designpatterns)
     1. [Creational patterns](#creational)
     2. [Structural patterns](#structural)
     3. [Behavioural patterns](#behavioural)
-2. [Architectural patterns](#architectural)
-3. [Design pattern explaination](#designpatternexplination)
-4. [Reference](#reference)
+4. [Design pattern explaination](#designpatternexplination)
+5. [Reference](#reference)
+
+# Architectural styles <a name="styles"></a>
+
+## Structure
+
+[Component](./component/README.md)
+
+[Monolithic application](./README.md) - TODO
+
+[Layered](./README.md) - TODO
+
+[Pipes And Filters](./README.md) - TODO
+
+## Shared memory
+
+[Data-Centric](./README.md) - TODO
+
+[Blackboard](./README.md) - TODO
+
+[Rule-Based](./README.md) - TODO
+
+## Messaging
+
+[Event-Driven/Implicit Invocation](./README.md) - TODO
+
+[Publish-Subscribe](./README.md) - TODO
+
+[Asynchronous Messaging](./README.md) - TODO
+
+## Adapative systems
+
+[Plug-ins](./README.md) - TODO
+
+[Microkernel](./README.md) - TODO
+
+[Reflection](./README.md) - TODO
+
+[Domain Specific Languages](./README.md) - TODO
+
+## Distributed systems
+
+[Client-Server](./README.md) - TODO
+
+[Shared Nothing Architecture](./README.md) - TODO
+
+[Space-Based Architecture](./README.md) - TODO
+
+[Object Request Broker](./README.md) - TODO
+
+[Peer-To-Peer](./README.md) - TODO
+
+[Representational State Transfer](./README.md) - TODO
+
+[Service-Oriented](./README.md) - TODO
+
+[Cloud Computing](./README.md) - TODO
+
+# Architectural patterns <a name="architectural"></a>
+
+[Front Controller](./README.md) - TODO 
+
+[Interceptor](./README.md) - TODO 
+
+[Model View Controller](./README.md) - TODO
+
+[N-Tier](./README.md) - TODO
+
+[Specification](./README.md) - TODO
+  
+[Naked Objects](./README.md) - TODO 
+
+[Service Locator](./README.md) - TODO
+
+[Active Record](./README.md) - TODO
+
+[Identity Map](./README.md) - TODO
+
+[Data Access Object](./README.md) - TODO 
+
+[Data Transfer Object](./README.md) - TODO
+
+[ADR](./README.md) - TODO 
+
+[Inversion Of Control](./README.md) -TODO
 
 # Design patterns <a name="designpatterns"></a>
 
@@ -24,87 +117,55 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 ## Creational patterns - Object creation <a name="creational"></a>
 
-[Abstract Factory](./) - TODO
+[Abstract Factory](./README.md) - TODO
 
 [Builder](./builder/README.md)
 
-[Factory Method](./) - TODO
+[Factory Method](./README.md) - TODO
 
-[Prototype](./) - TODO 
+[Prototype](./README.md) - TODO 
 
-[Singleton](./) - TODO
+[Singleton](./README.md) - TODO
 
 ## Structural patterns - Composition of classes or objects <a name="structural"></a>
 
-[Adapter](./) - TODO
+[Adapter](./README.md) - TODO
 
-[Bridge](./) - TODO
+[Bridge](./README.md) - TODO
 
-[Composite](./) - TODO
+[Composite](./README.md) - TODO
 
-[Decorator](./) - TODO
+[Decorator](./README.md) - TODO
 
-[Facade](./) - TODO
+[Facade](./README.md) - TODO
 
-[Flyweight](./) - TODO 
+[Flyweight](./README.md) - TODO 
 
-[Proxy](./) - TODO
+[Proxy](./README.md) - TODO
 
 ## Behavioural patterns - Charactize the ways in which classes or objects interact and distribute responsibility <a name="behavioural"></a>
 
-[Chain Of Responsibility](./) - []TODO
+[Chain Of Responsibility](./README.md) - TODO
 
-[Command](./) - TODO
+[Command](./README.md) - TODO
 
-[Interpreter](./) - TODO
+[Interpreter](./README.md) - TODO
 
-[Iterator](./) - TODDO
+[Iterator](./README.md) - TODDO
 
-[Mediator](./) - TODO
+[Mediator](./README.md) - TODO
 
-[Memento](./) - TODO
+[Memento](./README.md) - TODO
 
-[Observer](./) - TODO
+[Observer](./README.md) - TODO
 
-[State](./) - TODO
+[State](./README.md) - TODO
 
-[Strategy](./) - TODO
+[Strategy](./README.md) - TODO
 
-[Template Method](./) - TODO
+[Template Method](./README.md) - TODO
 
-[Visitor](./) - TODO
-
-# Architectural patterns <a name="architectural"></a>
-
-[Component](./component/README.md)
-
-[Front Controller](./) - TODO 
-
-[Interceptor](./) - TODO 
-
-[Model View Controller](./) - TODO
-
-[N-Tier](./) - TODO
-
-[Specification](./) - TODO
-
-[Publish–Subscribe](./) - TODO
-  
-[Naked Objects](./) - TODO 
-
-[Service Locator](./) - TODO
-
-[Active Record](./) - TODO
-
-[Identity Map](./) - TODO
-
-[Data Access Object](./) - TODO 
-
-[Data Transfer Object](./) - TODO
-
-[ADR](./) - TODO 
-
-[Inversion Of Control](./) -TODO
+[Visitor](./README.md) - TODO
 
 # Design pattern explaination <a name="designpatternexplination"></a>
 
