@@ -19,6 +19,11 @@ to learn from.
 
 # Table of Contents
 1. [Archtitectural styles](#styles)
+    1. [Structure](#archstructure)
+    2. [Shared memory](#archsharedmem)
+    3. [Messaging](#archmessaging)
+    4. [Adaptive systems](#archadaptive)
+    5. [Distributed systems](#archdist)
 2. [Architectural patterns](#architectural)
 3. [Design patterns](#designpatterns)
     1. [Creational patterns](#creational)
@@ -29,7 +34,7 @@ to learn from.
 
 # Architectural styles <a name="styles"></a>
 
-## Structure
+## Structure <a name="archstructure"></a>
 
 [Component](./component/README.md)
 
@@ -39,7 +44,7 @@ to learn from.
 
 [Pipes And Filters](./README.md) - TODO
 
-## Shared memory
+## Shared memory <a name="archsharedmem"></a>
 
 [Blackboard](./README.md) - TODO
 
@@ -47,7 +52,7 @@ to learn from.
 
 [Rule-Based](./README.md) - TODO
 
-## Messaging
+## Messaging <a name="archmessaging"></a>
 
 [Asynchronous Messaging](./README.md) - TODO
 
@@ -55,7 +60,7 @@ to learn from.
 
 [Publish-Subscribe](./README.md) - TODO
 
-## Adapative systems
+## Adapative systems <a name="archadaptive"></a>
 
 [Domain Specific Languages](./README.md) - TODO
 
@@ -65,7 +70,7 @@ to learn from.
 
 [Reflection](./README.md) - TODO
 
-## Distributed systems
+## Distributed systems <a name="archdist"></a>
 
 [Client-Server](./README.md) - TODO
 
