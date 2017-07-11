@@ -2,8 +2,8 @@
 
 The ways you should know about to be a solution architect aka software architect.
 
-The examples I will show I am going to do my best to reflect the styles, tactics and patterns, both architectural 
-pattern and design patterns so models can be viewed with from the domain, design and code perspective.
+The examples I will show will reflect the styles, tactics and patterns, both architectural 
+pattern and design patterns so models can be viewed from the domain, design and the code perspective.
  
  I will use some good model-driven engineering tool so generate the abstractions of the domain and design model, and 
  implement the details (interfaces/component/module) in the code model.
