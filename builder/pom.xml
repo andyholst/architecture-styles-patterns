@@ -27,7 +27,7 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>patterns</artifactId>
+        <artifactId>architecture-styles-patterns</artifactId>
         <groupId>com.design</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
