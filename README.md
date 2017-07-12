@@ -3,7 +3,7 @@
 The ways you should know about to be a solution architect aka software architect.
 
 The examples I will show will reflect the styles, tactics and patterns, both architectural 
-pattern and design patterns, you can view the uml diagrams of the implementations. I will do 
+pattern and design patterns, you can view the uml diagrams of the implementations. There will be 
 architecture-evident-coding style to express the styles, tactics and patterns.
 
 [![Build Status](https://travis-ci.org/MrAsimov/architecture-styles-patterns.svg?branch=master)](https://travis-ci.org/MrAsimov/architecture-styles-patterns)
