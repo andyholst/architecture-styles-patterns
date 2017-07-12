@@ -1,4 +1,4 @@
-# Styles, tactics and patterns with model-driven engineering aka model-driven architecture
+# Architecture styles, tactics and patterns and design patterns
 
 The ways you should know about to be a solution architect aka software architect.
 
