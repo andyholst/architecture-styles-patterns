@@ -6,7 +6,7 @@ The examples I will show will reflect the styles, tactics and patterns, both arc
 pattern and design patterns, you can view the uml diagrams of the implementations. I will do 
 architecture-evident-coding style to express the styles, tactics and patterns.
 
-[![Build Status](https://travis-ci.org/MrAsimov/patterns.svg?branch=master)](https://travis-ci.org/MrAsimov/patterns)
+[![Build Status](https://travis-ci.org/MrAsimov/architecture-styles-patterns.svg?branch=master)](https://travis-ci.org/MrAsimov/architecture-styles-patterns)
 [SonarQube](https://sonarcloud.io/dashboard?id=com.design%3Apatterns)
 
 # Introduction
