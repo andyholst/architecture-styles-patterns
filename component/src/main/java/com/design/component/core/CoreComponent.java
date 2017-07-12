@@ -45,7 +45,7 @@ public class CoreComponent extends Thread implements Component {
 
     @Override
     public void run() {
-        while (!pipe.isClosed() || !pipe.getQueue().isEmpty()) {
+        while (!pipe.isClosed()) {
             if (!pipe.getQueue().isEmpty()) {
                 message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
                 pipe.setClosed(true);

@@ -46,6 +46,8 @@ public class ComponentTest {
 
         Pipe pipe = new Pipe();
 
+        pipe.sendMessage();
+
         ClientComponent clientComponent = new ClientComponent();
 
         clientComponent.setConnector(pipe);
