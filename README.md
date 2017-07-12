@@ -1,6 +1,6 @@
 # Architecture styles, tactics and patterns and design patterns
 
-The ways you should know about to be a solution architect aka software architect.
+The styles, tactics and patterns you should know to work as a solution architect aka software architect.
 
 The examples I will show will reflect the styles, tactics and patterns, both architectural 
 pattern and design patterns, you can view the uml diagrams of the implementations. There will be 
@@ -8,12 +8,6 @@ architecture-evident-coding style to express the styles, tactics and patterns.
 
 [![Build Status](https://travis-ci.org/MrAsimov/architecture-styles-patterns.svg?branch=master)](https://travis-ci.org/MrAsimov/architecture-styles-patterns)
 [SonarQube](https://sonarcloud.io/dashboard?id=com.design%3Aarchitecture-styles-patterns)
-
-# Introduction
-
-I am exploring architectural styles, tactics and patterns and inner detail patterns like design patterns and otherI am 
-using the MIT license and want to contribute to learn best practises about patterns and how to document them for anybody
-to learn from.
 
 # Table of Contents
 1. [Archtitectural styles](#styles)
