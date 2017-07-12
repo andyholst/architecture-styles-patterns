@@ -7,7 +7,7 @@ pattern and design patterns, you can view the uml diagrams of the implementation
 architecture-evident-coding style to express the styles, tactics and patterns.
 
 [![Build Status](https://travis-ci.org/MrAsimov/architecture-styles-patterns.svg?branch=master)](https://travis-ci.org/MrAsimov/architecture-styles-patterns)
-[SonarQube](https://sonarcloud.io/dashboard?id=com.design%3Apatterns)
+[SonarQube](https://sonarcloud.io/dashboard?id=com.design%3Aarchitecture-styles-patterns)
 
 # Introduction
 
