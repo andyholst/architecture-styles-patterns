@@ -25,9 +25,4 @@
 package com.design.component.icomponent;
 
 public interface Component {
-    public void attachComponent(Component component);
-
-    public void sendMessage(byte[] message);
-
-    public void recieveMessage(byte[] message);
 }

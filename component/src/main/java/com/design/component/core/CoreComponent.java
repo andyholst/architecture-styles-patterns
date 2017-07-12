@@ -26,24 +26,30 @@ package com.design.component.core;
 
 
 import com.design.component.icomponent.Component;
+import com.design.component.icomponent.Pipe;
 
-public class CoreComponent implements Component {
-    private byte[] message;
-    private Component clientComponent;
+import java.nio.charset.StandardCharsets;
 
-    public void attachComponent(Component component) {
-        clientComponent = component;
+public class CoreComponent extends Thread implements Component {
+    StringBuilder message;
+    Pipe pipe;
+
+    public CoreComponent(Pipe pipe) {
+        this.pipe = pipe;
+        this.message = new StringBuilder();
     }
 
-    public void sendMessage(byte[] message) {
-        clientComponent.recieveMessage(message);
+    public String getMessage() {
+        return message.toString();
     }
 
-    public void recieveMessage(byte[] message) {
-        this.message = message;
-    }
-
-    public byte[] getRecievedMessage() {
-        return this.message;
+    @Override
+    public void run() {
+        while (!pipe.isClosed() || !pipe.getQueue().isEmpty()) {
+            if (!pipe.getQueue().isEmpty()) {
+                message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
+                pipe.setClosed(true);
+            }
+        }
     }
 }

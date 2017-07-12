@@ -25,33 +25,16 @@
 package com.design.component.client;
 
 import com.design.component.icomponent.Component;
-
-import java.nio.charset.StandardCharsets;
+import com.design.component.icomponent.Pipe;
 
 public class ClientComponent implements Component {
+    private Pipe pipe;
 
-    private ClientCore clientCore;
-    private Component coreComponent;
-    private byte[] message;
-
-    public ClientComponent() {
-        clientCore = new ClientCore();
+    public Pipe getPipe() {
+        return pipe;
     }
 
-    public void attachComponent(Component component) {
-        this.coreComponent = component;
-    }
-
-    public void sendMessage(byte[] message) {
-        clientCore.clientCoreMessageReciever(new String(message, StandardCharsets.UTF_8));
-        coreComponent.recieveMessage(message);
-    }
-
-    public void recieveMessage(byte[] message) {
-        this.message = message;
-    }
-
-    public byte[] getRecievedMessage() {
-        return this.message;
+    public void setConnector(Pipe pipe) {
+        this.pipe = pipe;
     }
 }

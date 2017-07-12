@@ -26,9 +26,8 @@ package com.design.component;
 
 import com.design.component.client.ClientComponent;
 import com.design.component.core.CoreComponent;
+import com.design.component.icomponent.Pipe;
 import org.junit.Test;
-
-import java.nio.charset.StandardCharsets;
 
 import static org.junit.Assert.assertEquals;
 
@@ -42,28 +41,29 @@ public class ComponentTest {
     }
 
     @Test
-    public void testComponentCommunication() {
+    public void testComponentCommunicationThroughPipeFilter() throws InterruptedException {
+        String message = "This is a message.";
 
-        String jsonMessage = "{\"string\": \"This is a string\"}";
+        Pipe pipe = new Pipe();
 
         ClientComponent clientComponent = new ClientComponent();
 
-        CoreComponent coreComponent = new CoreComponent();
+        clientComponent.setConnector(pipe);
 
-        clientComponent.attachComponent(coreComponent);
+        CoreComponent coreComponent = new CoreComponent(pipe);
 
-        clientComponent.sendMessage("".getBytes());
+        clientComponent.getPipe().setMessage(message.getBytes());
 
-        clientComponent.sendMessage(jsonMessage.getBytes());
+        coreComponent.start();
 
-        assertEquals(jsonMessage, new String(coreComponent.getRecievedMessage(), StandardCharsets.UTF_8));
+        assertEquals("", coreComponent.getMessage());
 
-        coreComponent.attachComponent(clientComponent);
+        clientComponent.getPipe().sendMessage();
 
-        coreComponent.sendMessage(jsonMessage.getBytes());
+        while (coreComponent.getMessage().isEmpty()) {
+            // Waiting
+        }
 
-        assertEquals(jsonMessage, new String(clientComponent.getRecievedMessage(), StandardCharsets.UTF_8));
-
+        assertEquals(message, coreComponent.getMessage());
     }
-
 }
