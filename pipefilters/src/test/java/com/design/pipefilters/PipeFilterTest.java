@@ -60,10 +60,6 @@ public class PipeFilterTest {
 
         coreComponent.start();
 
-        wait(100);
-
-        pipe.setPipeMessagePrepared(true);
-
         while (!coreComponent.isPipeClosed()) {
             // Waiting
         }
@@ -80,6 +76,7 @@ public class PipeFilterTest {
         Pipe pipe = new Pipe();
 
         pipe.sendMessage(null);
+        pipe.setPipeMessagePrepared(false);
 
         CoreComponent coreComponent = new CoreComponent(pipe);
 
@@ -89,6 +86,8 @@ public class PipeFilterTest {
         Assert.assertEquals("", coreComponent.getMessage());
 
         coreComponent.start();
+
+        pipe.setPipeMessagePrepared(true);
 
         while (!coreComponent.isPipeClosed()) {
             // Waiting
