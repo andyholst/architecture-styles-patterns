@@ -57,7 +57,10 @@ public class CoreComponent extends Thread implements Component {
         while (!pipe.isClosed()) {
             if (pipe.isPipeMessagePrepared()) {
                 byte[] bytes = pipe.getQueue().remove();
-                message.append(new String(bytes, StandardCharsets.UTF_8));
+
+                if (port.validateMessage(bytes)) {
+                    message.append(new String(bytes, StandardCharsets.UTF_8));
+                }
 
                 if (pipe.getQueue().isEmpty()) {
                     pipe.setClosed(true);
