@@ -38,7 +38,7 @@ you can view the uml diagrams of the implementations. There will be architecture
 
 [Monolithic application](./README.md) - TODO
 
-[Pipes And Filters](./pipefilters/README.md) - TODO
+[Pipes And Filters](./pipefilters/README.md)
 
 ## Shared memory <a name="archsharedmem"></a>
 
