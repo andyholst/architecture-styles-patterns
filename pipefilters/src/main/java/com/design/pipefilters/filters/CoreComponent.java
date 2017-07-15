@@ -30,6 +30,7 @@ import com.design.component.Port;
 import com.design.component.PortImpl;
 import com.design.pipefilters.pipe.Pipe;
 
+import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 
 public class CoreComponent extends Thread implements Component {
@@ -56,12 +57,11 @@ public class CoreComponent extends Thread implements Component {
     public void run() {
         int counter = 0;
         while (!pipe.isClosed()) {
-            if (pipe.isPipeMessagePrepared() && !pipe.getQueue().isEmpty()) {
-                byte[] bytes = pipe.getQueue().remove();
+            byte[] bytes;
+            if (pipe.isPipeMessagePrepared()) {
+                bytes = setNextBytes();
 
-                if (port.validateMessage(bytes)) {
-                    message.append(new String(bytes, StandardCharsets.UTF_8));
-                }
+                appendMessage(bytes);
 
                 if (pipe.getQueue().isEmpty()) {
                     pipe.setClosed(true);
@@ -73,6 +73,21 @@ public class CoreComponent extends Thread implements Component {
             }
             ++counter;
         }
+    }
+
+    private void appendMessage(byte[] bytes) {
+        if (port.validateMessage(bytes)) {
+            message.append(new String(bytes, StandardCharsets.UTF_8));
+        }
+    }
+
+    private byte[] setNextBytes() {
+        if (!pipe.getQueue().isEmpty()) {
+            return pipe.getQueue().remove();
+        }
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        byteArrayOutputStream.reset();
+        return byteArrayOutputStream.toByteArray();
     }
 
     @Override
