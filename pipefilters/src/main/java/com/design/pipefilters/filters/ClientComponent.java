@@ -33,6 +33,10 @@ public class ClientComponent extends Thread implements Component {
 
     private Pipe pipe;
 
+    public ClientComponent(Pipe pipe) {
+        this.pipe = pipe;
+    }
+
     @Override
     public void run() {
         int counter = 0;
@@ -47,10 +51,6 @@ public class ClientComponent extends Thread implements Component {
     @Override
     public Connector getConnector() {
         return pipe;
-    }
-
-    public void setConnector(Pipe pipe) {
-        this.pipe = pipe;
     }
 
     @Override

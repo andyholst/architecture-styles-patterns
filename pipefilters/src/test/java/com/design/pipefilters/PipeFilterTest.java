@@ -37,16 +37,13 @@ public class PipeFilterTest {
 
     @Test
     public void testComponentCommunicationThroughPipeFilter() throws InterruptedException {
-        // test pipe and filters
         String message = "012345678910";
 
         Pipe pipe = new Pipe();
 
         pipe.sendMessage(null);
 
-        ClientComponent clientComponent = new ClientComponent();
-
-        clientComponent.setConnector(pipe);
+        ClientComponent clientComponent = new ClientComponent(pipe);
 
         assertNull(clientComponent.getPort());
         assertNotNull(clientComponent.getConnector());
@@ -70,5 +67,30 @@ public class PipeFilterTest {
         Assert.assertEquals(false, coreComponent.getMessage().isEmpty());
 
         Assert.assertEquals(message, coreComponent.getMessage());
+    }
+
+    @Test
+    public void testComponentCommunicationThroughPipeFilterWithNullData() throws InterruptedException {
+
+        Pipe pipe = new Pipe();
+
+        pipe.sendMessage(null);
+        pipe.setPipeMessagePrepared(true);
+
+        CoreComponent coreComponent = new CoreComponent(pipe);
+
+        assertNotNull(coreComponent.getPort());
+        assertNotNull(coreComponent.getConnector());
+
+        Assert.assertEquals("", coreComponent.getMessage());
+
+        coreComponent.start();
+
+        while (!coreComponent.isPipeClosed()) {
+            // Waiting
+        }
+
+        Assert.assertEquals(true, coreComponent.isPipeClosed());
+        Assert.assertEquals(true, coreComponent.getMessage().isEmpty());
     }
 }
