@@ -53,10 +53,10 @@ public class CoreComponent extends Thread implements Component {
         while (!pipe.isClosed()) {
             if (pipe.isPipeMessagePrepared()) {
                 message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
-            }
 
-            if (pipe.getQueue().isEmpty() && pipe.isPipeMessagePrepared()) {
-                pipe.setClosed(true);
+                if (pipe.getQueue().isEmpty()) {
+                    pipe.setClosed(true);
+                }
             }
         }
     }
