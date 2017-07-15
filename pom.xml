@@ -33,7 +33,7 @@
     <modules>
         <module>builder</module>
         <module>component</module>
-        <module>pipefilter</module>
+        <module>pipefilters</module>
     </modules>
     <packaging>pom</packaging>
     <inceptionYear>2017</inceptionYear>

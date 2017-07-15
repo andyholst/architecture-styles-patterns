@@ -37,7 +37,7 @@
     <dependencies>
         <dependency>
             <groupId>com.design</groupId>
-            <artifactId>pipe-filter</artifactId>
+            <artifactId>pipe-filters</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
