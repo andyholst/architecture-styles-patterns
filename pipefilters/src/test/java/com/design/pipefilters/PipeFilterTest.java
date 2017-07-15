@@ -42,6 +42,7 @@ public class PipeFilterTest {
         Pipe pipe = new Pipe();
 
         pipe.sendMessage(null);
+        pipe.setPipeMessagePrepared(false);
 
         ClientComponent clientComponent = new ClientComponent(pipe);
 
@@ -59,6 +60,10 @@ public class PipeFilterTest {
 
         coreComponent.start();
 
+        wait(100);
+
+        pipe.setPipeMessagePrepared(true);
+
         while (!coreComponent.isPipeClosed()) {
             // Waiting
         }
@@ -75,7 +80,6 @@ public class PipeFilterTest {
         Pipe pipe = new Pipe();
 
         pipe.sendMessage(null);
-        pipe.setPipeMessagePrepared(true);
 
         CoreComponent coreComponent = new CoreComponent(pipe);
 
