@@ -56,7 +56,8 @@ public class CoreComponent extends Thread implements Component {
     public void run() {
         while (!pipe.isClosed()) {
             if (pipe.isPipeMessagePrepared()) {
-                message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
+                byte[] bytes = pipe.getQueue().remove();
+                message.append(new String(bytes, StandardCharsets.UTF_8));
 
                 if (pipe.getQueue().isEmpty()) {
                     pipe.setClosed(true);
