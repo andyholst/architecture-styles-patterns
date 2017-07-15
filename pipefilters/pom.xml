@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pipe-filters</artifactId>
+    <artifactId>pipefilters</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.design</groupId>
