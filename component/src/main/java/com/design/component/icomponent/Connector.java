@@ -1,5 +1,5 @@
 package com.design.component.icomponent;
 
 public interface Connector {
-    public void sendMessage();
+    public void sendMessage(byte[] message);
 }

@@ -27,14 +27,23 @@ package com.design.component.client;
 import com.design.component.icomponent.Component;
 import com.design.component.icomponent.Pipe;
 
-public class ClientComponent implements Component {
-    private Pipe pipe;
+public class ClientComponent extends Thread implements Component {
 
-    public Pipe getPipe() {
-        return pipe;
-    }
+
+    private Pipe pipe;
 
     public void setConnector(Pipe pipe) {
         this.pipe = pipe;
+    }
+
+    @Override
+    public void run() {
+        int counter = 0;
+        while (counter < 11) {
+            pipe.sendMessage(Integer.toString(counter).getBytes());
+
+            ++counter;
+        }
+        pipe.setPipeMessagePrepared(true);
     }
 }

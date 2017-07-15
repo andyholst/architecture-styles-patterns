@@ -32,21 +32,12 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class ComponentTest {
-    @org.junit.Before
-    public void setUp() throws Exception {
-    }
-
-    @org.junit.After
-    public void tearDown() throws Exception {
-    }
 
     @Test
     public void testComponentCommunicationThroughPipeFilter() throws InterruptedException {
-        String message = "This is a message.";
+        String message = "012345678910";
 
         Pipe pipe = new Pipe();
-
-        pipe.sendMessage();
 
         ClientComponent clientComponent = new ClientComponent();
 
@@ -54,15 +45,13 @@ public class ComponentTest {
 
         CoreComponent coreComponent = new CoreComponent(pipe);
 
-        clientComponent.getPipe().setMessage(message.getBytes());
+        assertEquals("", coreComponent.getMessage());
+
+        clientComponent.start();
 
         coreComponent.start();
 
-        assertEquals("", coreComponent.getMessage());
-
-        clientComponent.getPipe().sendMessage();
-
-        while (coreComponent.getMessage().isEmpty()) {
+        while (!coreComponent.isPipeClosed()) {
             // Waiting
         }
 

@@ -39,6 +39,10 @@ public class CoreComponent extends Thread implements Component {
         this.message = new StringBuilder();
     }
 
+    public boolean isPipeClosed() {
+        return pipe.isClosed();
+    }
+
     public String getMessage() {
         return message.toString();
     }
@@ -46,8 +50,11 @@ public class CoreComponent extends Thread implements Component {
     @Override
     public void run() {
         while (!pipe.isClosed()) {
-            if (!pipe.getQueue().isEmpty()) {
-                message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
+            if (!pipe.getQueue().isEmpty() && pipe.isPipeMessagePrepared()) {
+                this.message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
+            }
+
+            if (pipe.getQueue().isEmpty()) {
                 pipe.setClosed(true);
             }
         }

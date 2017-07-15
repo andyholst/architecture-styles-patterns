@@ -5,13 +5,22 @@ import java.util.Queue;
 
 public class Pipe implements Connector {
 
-    private byte[] message;
-
     Queue<byte[]> queue;
+
+    public boolean isPipeMessagePrepared() {
+        return pipeMessagePrepared;
+    }
+
+    public void setPipeMessagePrepared(boolean pipeMessagePrepared) {
+        this.pipeMessagePrepared = pipeMessagePrepared;
+    }
+
+    boolean pipeMessagePrepared;
 
     public void setClosed(boolean closed) {
         this.closed = closed;
     }
+
 
     private boolean closed;
 
@@ -19,15 +28,10 @@ public class Pipe implements Connector {
         this.queue = new LinkedList<>();
     }
 
-    public void setMessage(byte[] message) {
-        this.message = message;
-    }
-
     @Override
-    public void sendMessage() {
+    public void sendMessage(byte[] message) {
         if (message != null) {
             queue.add(message);
-            message = null;
         }
     }
 
