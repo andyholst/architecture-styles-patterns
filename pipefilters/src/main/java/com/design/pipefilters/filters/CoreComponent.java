@@ -67,7 +67,7 @@ public class CoreComponent extends Thread implements Component {
                     pipe.setClosed(true);
                 }
             } else {
-                if (counter > 100000) {
+                if (counter > 1000) {
                     pipe.setClosed(true);
                 }
             }
