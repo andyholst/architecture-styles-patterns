@@ -71,13 +71,13 @@ public class CoreComponent extends Thread implements Component {
         }
     }
 
-    private void appendMessage(byte[] bytes) {
+    void appendMessage(byte[] bytes) {
         if (port.validateMessage(bytes)) {
             message.append(new String(bytes, StandardCharsets.UTF_8));
         }
     }
 
-    private byte[] setNextBytes() {
+    byte[] setNextBytes() {
         if (!pipe.getQueue().isEmpty()) {
             return pipe.getQueue().remove();
         }
