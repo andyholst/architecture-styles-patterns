@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.design.pipefilters</OriginalElement>
+  <nodes>
+    <node x="0.0" y="212.0">com.design.pipefilters.filters.CoreComponent</node>
+    <node x="109.25" y="0.0">com.design.pipefilters.pipe.Pipe</node>
+    <node x="311.0" y="223.0">com.design.pipefilters.filters.ClientComponent</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.design.pipefilters.filters.ClientComponent" target="com.design.pipefilters.pipe.Pipe">
+      <point x="0.0" y="-59.0" />
+      <point x="451.0" y="187.0" />
+      <point x="392.75" y="187.0" />
+      <point x="94.5" y="81.0" />
+    </edge>
+    <edge source="com.design.pipefilters.filters.CoreComponent" target="com.design.pipefilters.pipe.Pipe">
+      <point x="0.0" y="-70.0" />
+      <point x="145.5" y="187.0" />
+      <point x="203.75" y="187.0" />
+      <point x="-94.5" y="81.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="67.0" y="270.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

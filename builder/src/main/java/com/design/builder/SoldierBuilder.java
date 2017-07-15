@@ -25,5 +25,5 @@
 package com.design.builder;
 
 public interface SoldierBuilder {
-    public Soldier build();
+    Soldier build();
 }

@@ -1,4 +1,6 @@
-package com.design.pipefilter;
+package com.design.pipefilters.pipe;
+
+import com.design.component.Connector;
 
 import java.util.LinkedList;
 import java.util.Queue;

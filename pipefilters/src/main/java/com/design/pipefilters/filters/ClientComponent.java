@@ -22,42 +22,39 @@
  * SOFTWARE.
  */
 
-package com.design.component.core;
+package com.design.pipefilters.filters;
 
+import com.design.component.Component;
+import com.design.component.Connector;
+import com.design.component.Port;
+import com.design.pipefilters.pipe.Pipe;
 
-import com.design.component.icomponent.Component;
-import com.design.pipefilter.Pipe;
+public class ClientComponent extends Thread implements Component {
 
-import java.nio.charset.StandardCharsets;
-
-public class CoreComponent extends Thread implements Component {
-
-    private StringBuilder message;
     private Pipe pipe;
-
-    public CoreComponent(Pipe pipe) {
-        this.pipe = pipe;
-        message = new StringBuilder();
-    }
-
-    public boolean isPipeClosed() {
-        return pipe.isClosed();
-    }
-
-    public String getMessage() {
-        return message.toString().trim();
-    }
 
     @Override
     public void run() {
-        while (!pipe.isClosed()) {
-            if (pipe.isPipeMessagePrepared()) {
-                message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
+        int counter = 0;
+        while (counter < 11) {
+            pipe.sendMessage(Integer.toString(counter).getBytes());
 
-                if (pipe.getQueue().isEmpty()) {
-                    pipe.setClosed(true);
-                }
-            }
+            ++counter;
         }
+        pipe.setPipeMessagePrepared(true);
+    }
+
+    @Override
+    public Connector getConnector() {
+        return pipe;
+    }
+
+    public void setConnector(Pipe pipe) {
+        this.pipe = pipe;
+    }
+
+    @Override
+    public Port getPort() {
+        return null;
     }
 }

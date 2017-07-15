@@ -3,31 +3,65 @@
   <ID>JAVA</ID>
   <OriginalElement>com.design.component</OriginalElement>
   <nodes>
-    <node x="197.25" y="0.0">com.design.component.icomponent.Component</node>
-    <node x="271.0" y="91.0">com.design.component.client.ClientComponent</node>
-    <node x="0.0" y="80.0">com.design.component.core.CoreComponent</node>
+    <node x="0.0" y="102.0">com.design.component.Component</node>
+    <node x="274.0" y="113.0">com.design.component.ConnectorImpl</node>
+    <node x="599.0" y="0.0">com.design.component.Port</node>
+    <node x="388.5" y="226.0">com.design.component.ComponentImpl</node>
+    <node x="337.0" y="0.0">com.design.component.Connector</node>
+    <node x="526.0" y="113.0">com.design.component.PortImpl</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.design.component.client.ClientComponent" target="com.design.component.icomponent.Component">
+    <edge source="com.design.component.ComponentImpl" target="com.design.component.Connector">
       <point x="0.0" y="-37.0" />
-      <point x="391.0" y="55.0" />
-      <point x="288.75" y="55.0" />
-      <point x="30.5" y="15.0" />
+      <point x="515.5" y="77.0" />
+      <point x="510.25" y="77.0" />
+      <point x="57.75" y="26.0" />
     </edge>
-    <edge source="com.design.component.core.CoreComponent" target="com.design.component.icomponent.Component">
-      <point x="0.0" y="-48.0" />
-      <point x="125.5" y="55.0" />
-      <point x="227.75" y="55.0" />
-      <point x="-30.5" y="15.0" />
+    <edge source="com.design.component.ComponentImpl" target="com.design.component.PortImpl">
+      <point x="50.799999999999955" y="-37.0" />
+      <point x="566.3" y="196.0" />
+      <point x="661.5" y="196.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.design.component.PortImpl" target="com.design.component.Port">
+      <point x="0.0" y="-26.0" />
+      <point x="661.5" y="77.0" />
+      <point x="666.75" y="77.0" />
+      <point x="-67.75" y="26.0" />
+    </edge>
+    <edge source="com.design.component.ComponentImpl" target="com.design.component.ConnectorImpl">
+      <point x="-50.80000000000001" y="-37.0" />
+      <point x="464.7" y="196.0" />
+      <point x="389.5" y="196.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.design.component.ComponentImpl" target="com.design.component.Component">
+      <point x="-101.60000000000002" y="-37.0" />
+      <point x="413.9" y="206.0" />
+      <point x="127.0" y="206.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.design.component.ComponentImpl" target="com.design.component.Port">
+      <point x="101.60000000000002" y="-37.0" />
+      <point x="617.1" y="206.0" />
+      <point x="807.5" y="206.0" />
+      <point x="807.5" y="77.0" />
+      <point x="802.25" y="77.0" />
+      <point x="67.75" y="26.0" />
+    </edge>
+    <edge source="com.design.component.ConnectorImpl" target="com.design.component.Connector">
+      <point x="0.0" y="-26.0" />
+      <point x="389.5" y="77.0" />
+      <point x="394.75" y="77.0" />
+      <point x="-57.75" y="26.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="129.0" y="92.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="143.0" y="30.0" />
   <SelectedNodes>
-    <node>com.design.component.core.CoreComponent</node>
+    <node>com.design.component.ComponentImpl</node>
   </SelectedNodes>
   <Categories>
-    <Category>Inner Classes</Category>
     <Category>Methods</Category>
   </Categories>
   <SCOPE>Production</SCOPE>

@@ -22,7 +22,10 @@
  * SOFTWARE.
  */
 
-package com.design.component.icomponent;
+package com.design.component;
 
 public interface Component {
+    Connector getConnector();
+
+    Port getPort();
 }

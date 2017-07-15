@@ -22,14 +22,41 @@
  * SOFTWARE.
  */
 
-package com.design.builder;
+package com.design.pipefilters;
 
-public interface Soldier {
-    String getWeapon();
+import com.design.pipefilters.filters.ClientComponent;
+import com.design.pipefilters.filters.CoreComponent;
+import com.design.pipefilters.pipe.Pipe;
+import org.junit.Assert;
+import org.junit.Test;
 
-    void setWeapon(String weapon);
+public class PipeFilterTest {
 
-    String getArmor();
+    @Test
+    public void testComponentCommunicationThroughPipeFilter() throws InterruptedException {
+        String message = "012345678910";
 
-    void setArmor(String knightArmor);
+        Pipe pipe = new Pipe();
+
+        ClientComponent clientComponent = new ClientComponent();
+
+        clientComponent.setConnector(pipe);
+
+        CoreComponent coreComponent = new CoreComponent(pipe);
+
+        Assert.assertEquals("", coreComponent.getMessage());
+
+        clientComponent.start();
+
+        coreComponent.start();
+
+        while (!coreComponent.isPipeClosed()) {
+            // Waiting
+        }
+
+        Assert.assertEquals(true, coreComponent.isPipeClosed());
+        Assert.assertEquals(false, coreComponent.getMessage().isEmpty());
+
+        Assert.assertEquals(message, coreComponent.getMessage());
+    }
 }
