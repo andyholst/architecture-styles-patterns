@@ -55,7 +55,6 @@ public class CoreComponent extends Thread implements Component {
 
     @Override
     public void run() {
-        int counter = 0;
         while (!pipe.isClosed()) {
             byte[] bytes;
             if (pipe.isPipeMessagePrepared()) {
@@ -67,11 +66,8 @@ public class CoreComponent extends Thread implements Component {
                     pipe.setClosed(true);
                 }
             } else {
-                if (counter > 1000) {
                     pipe.setClosed(true);
-                }
             }
-            ++counter;
         }
     }
 
