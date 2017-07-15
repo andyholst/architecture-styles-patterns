@@ -55,6 +55,9 @@ public class ComponentTest {
             // Waiting
         }
 
+        assertEquals(true, coreComponent.isPipeClosed());
+        assertEquals(false, coreComponent.getMessage().isEmpty());
+
         assertEquals(message, coreComponent.getMessage());
     }
 }

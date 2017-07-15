@@ -31,12 +31,13 @@ import com.design.component.icomponent.Pipe;
 import java.nio.charset.StandardCharsets;
 
 public class CoreComponent extends Thread implements Component {
-    StringBuilder message;
-    Pipe pipe;
+
+    private StringBuilder message;
+    private Pipe pipe;
 
     public CoreComponent(Pipe pipe) {
         this.pipe = pipe;
-        this.message = new StringBuilder();
+        message = new StringBuilder();
     }
 
     public boolean isPipeClosed() {
@@ -44,17 +45,17 @@ public class CoreComponent extends Thread implements Component {
     }
 
     public String getMessage() {
-        return message.toString();
+        return message.toString().trim();
     }
 
     @Override
     public void run() {
         while (!pipe.isClosed()) {
-            if (!pipe.getQueue().isEmpty() && pipe.isPipeMessagePrepared()) {
-                this.message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
+            if (pipe.isPipeMessagePrepared() && !pipe.getQueue().isEmpty()) {
+                message.append(new String(pipe.getQueue().remove(), StandardCharsets.UTF_8));
             }
 
-            if (pipe.getQueue().isEmpty()) {
+            if (pipe.getQueue().isEmpty() && pipe.isPipeMessagePrepared()) {
                 pipe.setClosed(true);
             }
         }
