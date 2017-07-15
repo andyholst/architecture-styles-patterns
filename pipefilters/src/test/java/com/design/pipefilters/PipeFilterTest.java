@@ -37,6 +37,7 @@ public class PipeFilterTest {
 
     @Test
     public void testComponentCommunicationThroughPipeFilter() throws InterruptedException {
+        // test pipe and filters
         String message = "012345678910";
 
         Pipe pipe = new Pipe();

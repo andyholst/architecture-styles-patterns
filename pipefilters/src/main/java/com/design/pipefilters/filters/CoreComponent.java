@@ -24,7 +24,6 @@
 
 package com.design.pipefilters.filters;
 
-
 import com.design.component.Component;
 import com.design.component.Connector;
 import com.design.component.Port;
