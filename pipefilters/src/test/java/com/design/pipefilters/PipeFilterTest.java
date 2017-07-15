@@ -30,6 +30,9 @@ import com.design.pipefilters.pipe.Pipe;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
 public class PipeFilterTest {
 
     @Test
@@ -38,11 +41,19 @@ public class PipeFilterTest {
 
         Pipe pipe = new Pipe();
 
+        pipe.sendMessage(null);
+
         ClientComponent clientComponent = new ClientComponent();
 
         clientComponent.setConnector(pipe);
 
+        assertNull(clientComponent.getPort());
+        assertNotNull(clientComponent.getConnector());
+
         CoreComponent coreComponent = new CoreComponent(pipe);
+
+        assertNotNull(coreComponent.getPort());
+        assertNotNull(coreComponent.getConnector());
 
         Assert.assertEquals("", coreComponent.getMessage());
 

@@ -28,6 +28,7 @@ package com.design.pipefilters.filters;
 import com.design.component.Component;
 import com.design.component.Connector;
 import com.design.component.Port;
+import com.design.component.PortImpl;
 import com.design.pipefilters.pipe.Pipe;
 
 import java.nio.charset.StandardCharsets;
@@ -36,10 +37,12 @@ public class CoreComponent extends Thread implements Component {
 
     private StringBuilder message;
     private Pipe pipe;
+    private Port port;
 
     public CoreComponent(Pipe pipe) {
         this.pipe = pipe;
         message = new StringBuilder();
+        port = new PortImpl();
     }
 
     public boolean isPipeClosed() {
@@ -70,6 +73,6 @@ public class CoreComponent extends Thread implements Component {
 
     @Override
     public Port getPort() {
-        return null;
+        return port;
     }
 }
