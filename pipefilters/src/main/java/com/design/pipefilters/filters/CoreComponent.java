@@ -54,13 +54,10 @@ public class CoreComponent extends Thread implements Component {
 
     @Override
     public void run() {
+        int counter = 0;
         while (!pipe.isClosed()) {
-            if (pipe.isPipeMessagePrepared()) {
-                byte[] bytes = null;
-
-                if (!pipe.getQueue().isEmpty()) {
-                    bytes = pipe.getQueue().remove();
-                }
+            if (pipe.isPipeMessagePrepared() && !pipe.getQueue().isEmpty()) {
+                byte[] bytes = pipe.getQueue().remove();
 
                 if (port.validateMessage(bytes)) {
                     message.append(new String(bytes, StandardCharsets.UTF_8));
@@ -69,7 +66,12 @@ public class CoreComponent extends Thread implements Component {
                 if (pipe.getQueue().isEmpty()) {
                     pipe.setClosed(true);
                 }
+            } else {
+                if (counter > 100000) {
+                    pipe.setClosed(true);
+                }
             }
+            ++counter;
         }
     }
 

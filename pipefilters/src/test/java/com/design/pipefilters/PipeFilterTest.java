@@ -87,8 +87,6 @@ public class PipeFilterTest {
 
         coreComponent.start();
 
-        pipe.setPipeMessagePrepared(true);
-
         while (!coreComponent.isPipeClosed()) {
             // Waiting
         }
