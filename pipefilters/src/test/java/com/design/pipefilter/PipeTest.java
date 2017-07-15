@@ -12,6 +12,8 @@ public class PipeTest {
     public void testPipe() {
         Pipe pipe = new Pipe();
 
+        pipe.sendMessage(null);
+
         pipe.setPipeMessagePrepared(false);
         pipe.setClosed(false);
 
