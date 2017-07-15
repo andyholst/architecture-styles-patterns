@@ -58,6 +58,10 @@ public class PipeFilterTest {
 
         clientComponent.start();
 
+        while (!clientComponent.isPipeMessagePrepared()) {
+            // Waiting
+        }
+
         coreComponent.start();
 
         while (!coreComponent.isPipeClosed()) {

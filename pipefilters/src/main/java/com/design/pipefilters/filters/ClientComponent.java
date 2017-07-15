@@ -48,6 +48,10 @@ public class ClientComponent extends Thread implements Component {
         pipe.setPipeMessagePrepared(true);
     }
 
+    public boolean isPipeMessagePrepared() {
+        return pipe.isPipeMessagePrepared();
+    }
+
     @Override
     public Connector getConnector() {
         return pipe;
