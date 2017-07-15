@@ -26,7 +26,7 @@ package com.design.component;
 
 import com.design.component.client.ClientComponent;
 import com.design.component.core.CoreComponent;
-import com.design.component.icomponent.Pipe;
+import com.design.pipefilter.Pipe;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

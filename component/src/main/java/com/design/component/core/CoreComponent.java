@@ -26,7 +26,7 @@ package com.design.component.core;
 
 
 import com.design.component.icomponent.Component;
-import com.design.component.icomponent.Pipe;
+import com.design.pipefilter.Pipe;
 
 import java.nio.charset.StandardCharsets;
 

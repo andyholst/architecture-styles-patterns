@@ -3,38 +3,34 @@
   <ID>JAVA</ID>
   <OriginalElement>com.design.component</OriginalElement>
   <nodes>
-    <node x="154.25" y="287.0">com.design.component.icomponent.Component</node>
-    <node x="0.0" y="102.0">com.design.component.icomponent.Pipe</node>
-    <node x="235.0" y="367.0">com.design.component.client.ClientComponent</node>
-    <node x="0.0" y="367.0">com.design.component.core.CoreComponent</node>
-    <node x="232.0" y="486.0">com.design.component.icomponent.Port</node>
-    <node x="53.0" y="0.0">com.design.component.icomponent.Connector</node>
+    <node x="197.25" y="0.0">com.design.component.icomponent.Component</node>
+    <node x="271.0" y="91.0">com.design.component.client.ClientComponent</node>
+    <node x="0.0" y="80.0">com.design.component.core.CoreComponent</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.design.component.client.ClientComponent" target="com.design.component.icomponent.Component">
       <point x="0.0" y="-37.0" />
-      <point x="323.0" y="342.0" />
-      <point x="245.75" y="342.0" />
+      <point x="391.0" y="55.0" />
+      <point x="288.75" y="55.0" />
       <point x="30.5" y="15.0" />
     </edge>
-    <edge source="com.design.component.icomponent.Pipe" target="com.design.component.icomponent.Connector">
-      <point x="0.0" y="-70.0" />
-      <point x="0.0" y="26.0" />
-    </edge>
     <edge source="com.design.component.core.CoreComponent" target="com.design.component.icomponent.Component">
-      <point x="0.0" y="-37.0" />
-      <point x="107.5" y="342.0" />
-      <point x="184.75" y="342.0" />
+      <point x="0.0" y="-48.0" />
+      <point x="125.5" y="55.0" />
+      <point x="227.75" y="55.0" />
       <point x="-30.5" y="15.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="170.0" y="292.5" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="129.0" y="92.5" />
+  <SelectedNodes>
+    <node>com.design.component.core.CoreComponent</node>
+  </SelectedNodes>
   <Categories>
+    <Category>Inner Classes</Category>
     <Category>Methods</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
-  <VISIBILITY>public</VISIBILITY>
+  <VISIBILITY>private</VISIBILITY>
 </Diagram>
 

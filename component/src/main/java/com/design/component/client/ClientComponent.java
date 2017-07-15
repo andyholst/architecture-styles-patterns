@@ -25,7 +25,7 @@
 package com.design.component.client;
 
 import com.design.component.icomponent.Component;
-import com.design.component.icomponent.Pipe;
+import com.design.pipefilter.Pipe;
 
 public class ClientComponent extends Thread implements Component {
 
