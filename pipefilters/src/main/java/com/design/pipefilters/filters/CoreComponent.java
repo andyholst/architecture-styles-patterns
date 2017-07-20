@@ -33,9 +33,9 @@ import java.nio.charset.StandardCharsets;
 
 public class CoreComponent extends Thread implements Component {
 
-    private StringBuilder message;
-    Pipe pipe;
-    private Port port;
+    private final StringBuilder message;
+    final Pipe pipe;
+    private final Port port;
 
     public CoreComponent(Pipe pipe, Port port) {
         this.pipe = pipe;

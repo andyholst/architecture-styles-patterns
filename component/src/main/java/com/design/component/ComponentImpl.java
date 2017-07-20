@@ -2,8 +2,8 @@ package com.design.component;
 
 public class ComponentImpl implements Component {
 
-    private Port port;
-    private Connector connector;
+    private final Port port;
+    private final Connector connector;
 
     public ComponentImpl() {
         port = new PortImpl();

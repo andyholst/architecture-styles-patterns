@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class ConnectorImpl implements Connector {
 
-    private Queue<byte[]> messageQueue;
+    private final Queue<byte[]> messageQueue;
 
     public ConnectorImpl() {
         messageQueue = new LinkedList<>();

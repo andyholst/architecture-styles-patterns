@@ -32,4 +32,8 @@ public interface Soldier {
     String getArmor();
 
     void setArmor(String knightArmor);
+
+    String getName();
+
+    void setName(String name);
 }

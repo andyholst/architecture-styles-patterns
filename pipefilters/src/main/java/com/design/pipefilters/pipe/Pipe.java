@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class Pipe implements Connector {
 
-    private Queue<byte[]> queue;
+    private final Queue<byte[]> queue;
     private boolean pipeMessagePrepared;
     private boolean closed;
 

@@ -24,40 +24,39 @@
 
 package com.design.builder;
 
-public class Knight extends Person implements Soldier {
+public class Knight implements Soldier {
 
     private String armor;
     private String weapon;
+    private String name;
 
-    public boolean isKnightArmor() {
-        return armor.contains("Knight armor");
-    }
-
-    public boolean isSword() {
-        return weapon.contains("sword");
-    }
-
-    public boolean isKnife() {
-        return weapon.contains("knife");
-    }
-
-    public boolean isShield() {
-        return armor.contains("shield");
-    }
-
+    @Override
     public String getWeapon() {
         return weapon;
     }
 
+    @Override
     public void setWeapon(String weapon) {
         this.weapon = weapon;
     }
 
+    @Override
     public String getArmor() {
         return armor;
     }
 
-    public void setArmor(String armor) {
-        this.armor = armor;
+    @Override
+    public void setArmor(String knightArmor) {
+        this.armor = knightArmor;
+    }
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
     }
 }

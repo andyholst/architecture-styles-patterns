@@ -28,7 +28,7 @@ import org.apache.commons.lang3.StringUtils;
 
 public class KnightBuilder implements SoldierBuilder {
 
-    Knight knight;
+    private final Soldier knight;
 
     public KnightBuilder() {
         knight = new Knight();
@@ -87,7 +87,8 @@ public class KnightBuilder implements SoldierBuilder {
         return this;
     }
 
-    public Knight build() {
+    @Override
+    public Soldier build() {
         return knight;
     }
 }

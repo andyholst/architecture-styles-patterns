@@ -37,7 +37,7 @@ public class ComponentTest {
         assertNotNull(component.getConnector());
         assertNotNull(component.getPort());
 
-        component.getPort().writeMessage("".getBytes(), component.getConnector());
+        assertEquals(false, component.getPort().writeMessage("".getBytes(), component.getConnector()));
 
         assertEquals(0, component.getPort().readMessage("".getBytes()).length);
 

@@ -31,8 +31,8 @@ import com.design.pipefilters.pipe.Pipe;
 
 public class ClientComponent extends Thread implements Component {
 
-    private Pipe pipe;
-    private Port port;
+    private final Pipe pipe;
+    private final Port port;
 
     public ClientComponent(Pipe pipe, Port port) {
         this.pipe = pipe;
