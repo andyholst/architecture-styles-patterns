@@ -31,13 +31,17 @@ import com.design.pipefilters.pipe.Pipe;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+import java.util.concurrent.TimeoutException;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class PipeFilterTest {
 
     @Test
-    public void testComponentCommunicationThroughPipeFilter() throws InterruptedException {
+    public void testComponentCommunicationThroughPipeFilter() throws InterruptedException, TimeoutException {
         String message = "012345678910";
 
         Pipe pipe = new Pipe();
@@ -61,14 +65,24 @@ public class PipeFilterTest {
 
         clientComponent.start();
 
+        LocalDateTime localDateTime = LocalDateTime.now();
+
         while (!clientComponent.isPipeMessagePrepared()) {
-            // Waiting
+            LocalDateTime localDateTimeNow = LocalDateTime.now();
+            if (ChronoUnit.SECONDS.between(localDateTime, localDateTimeNow) > 60) {
+                throw new TimeoutException();
+            }
         }
 
         coreComponent.start();
 
+        localDateTime = LocalDateTime.now();
+
         while (!coreComponent.isPipeClosed()) {
-            // Waiting
+            LocalDateTime localDateTimeNow = LocalDateTime.now();
+            if (ChronoUnit.SECONDS.between(localDateTime, localDateTimeNow) > 60) {
+                throw new TimeoutException();
+            }
         }
 
         Assert.assertEquals(true, coreComponent.isPipeClosed());
@@ -78,7 +92,7 @@ public class PipeFilterTest {
     }
 
     @Test
-    public void testComponentCommunicationThroughPipeFilterWithNullData() throws InterruptedException {
+    public void testComponentCommunicationThroughPipeFilterWithNullData() throws InterruptedException, TimeoutException {
 
         Pipe pipe = new Pipe();
 
@@ -94,8 +108,13 @@ public class PipeFilterTest {
 
         coreComponent.start();
 
+        LocalDateTime localDateTime = LocalDateTime.now();
+
         while (!coreComponent.isPipeClosed()) {
-            // Waiting
+            LocalDateTime localDateTimeNow = LocalDateTime.now();
+            if (ChronoUnit.SECONDS.between(localDateTime, localDateTimeNow) > 60) {
+                throw new TimeoutException();
+            }
         }
 
         Assert.assertEquals(true, coreComponent.isPipeClosed());
