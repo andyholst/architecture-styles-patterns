@@ -26,6 +26,5 @@ package com.design.component;
 
 public interface Component {
     Connector getConnector();
-
     Port getPort();
 }

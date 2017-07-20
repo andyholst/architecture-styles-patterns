@@ -27,10 +27,8 @@ package com.design.pipefilters.filters;
 import com.design.component.Component;
 import com.design.component.Connector;
 import com.design.component.Port;
-import com.design.component.PortImpl;
 import com.design.pipefilters.pipe.Pipe;
 
-import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 
 public class CoreComponent extends Thread implements Component {
@@ -39,10 +37,10 @@ public class CoreComponent extends Thread implements Component {
     private Pipe pipe;
     private Port port;
 
-    public CoreComponent(Pipe pipe) {
+    public CoreComponent(Pipe pipe, Port port) {
         this.pipe = pipe;
         message = new StringBuilder();
-        port = new PortImpl();
+        this.port = port;
     }
 
     public boolean isPipeClosed() {
@@ -58,32 +56,23 @@ public class CoreComponent extends Thread implements Component {
         while (!pipe.isClosed()) {
             byte[] bytes;
             if (pipe.isPipeMessagePrepared()) {
-                bytes = setNextBytes();
-
-                appendMessage(bytes);
+                bytes = getConnector().readMessage();
+                if (port.validateMessage(bytes)) {
+                    bytes = port.readMessage(bytes);
+                    appendMessage(bytes);
+                }
 
                 if (pipe.getQueue().isEmpty()) {
                     pipe.setClosed(true);
                 }
             } else {
-                    pipe.setClosed(true);
+                pipe.setClosed(true);
             }
         }
     }
 
     void appendMessage(byte[] bytes) {
-        if (port.validateMessage(bytes)) {
-            message.append(new String(bytes, StandardCharsets.UTF_8));
-        }
-    }
-
-    byte[] setNextBytes() {
-        if (!pipe.getQueue().isEmpty()) {
-            return pipe.getQueue().remove();
-        }
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        byteArrayOutputStream.reset();
-        return byteArrayOutputStream.toByteArray();
+        message.append(new String(bytes, StandardCharsets.UTF_8));
     }
 
     @Override

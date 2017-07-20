@@ -15,4 +15,12 @@ public class ConnectorImpl implements Connector {
     public void sendMessage(byte[] message) {
         messageQueue.add(message);
     }
+
+    @Override
+    public byte[] readMessage() {
+        if (!messageQueue.isEmpty()) {
+           return messageQueue.remove();
+        }
+        return new byte[0];
+    }
 }

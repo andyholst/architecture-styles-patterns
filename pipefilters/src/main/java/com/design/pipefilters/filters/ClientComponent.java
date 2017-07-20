@@ -32,16 +32,18 @@ import com.design.pipefilters.pipe.Pipe;
 public class ClientComponent extends Thread implements Component {
 
     private Pipe pipe;
+    private Port port;
 
-    public ClientComponent(Pipe pipe) {
+    public ClientComponent(Pipe pipe, Port port) {
         this.pipe = pipe;
+        this.port = port;
     }
 
     @Override
     public void run() {
         int counter = 0;
         while (counter < 11) {
-            pipe.sendMessage(Integer.toString(counter).getBytes());
+            port.writeMessage(Integer.toString(counter).getBytes(), pipe);
 
             ++counter;
         }
@@ -59,6 +61,6 @@ public class ClientComponent extends Thread implements Component {
 
     @Override
     public Port getPort() {
-        return null;
+        return port;
     }
 }

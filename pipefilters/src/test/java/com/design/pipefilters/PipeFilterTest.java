@@ -24,14 +24,15 @@
 
 package com.design.pipefilters;
 
+import com.design.component.PortImpl;
 import com.design.pipefilters.filters.ClientComponent;
 import com.design.pipefilters.filters.CoreComponent;
 import com.design.pipefilters.pipe.Pipe;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
 
 public class PipeFilterTest {
 
@@ -41,15 +42,17 @@ public class PipeFilterTest {
 
         Pipe pipe = new Pipe();
 
+        assertEquals("".length(), pipe.readMessage().length);
+
         pipe.sendMessage(null);
         pipe.setPipeMessagePrepared(false);
 
-        ClientComponent clientComponent = new ClientComponent(pipe);
+        ClientComponent clientComponent = new ClientComponent(pipe, new PortImpl());
 
-        assertNull(clientComponent.getPort());
+        assertNotNull(clientComponent.getPort());
         assertNotNull(clientComponent.getConnector());
 
-        CoreComponent coreComponent = new CoreComponent(pipe);
+        CoreComponent coreComponent = new CoreComponent(pipe, new PortImpl());
 
         assertNotNull(coreComponent.getPort());
         assertNotNull(coreComponent.getConnector());
@@ -82,7 +85,7 @@ public class PipeFilterTest {
         pipe.sendMessage(null);
         pipe.setPipeMessagePrepared(false);
 
-        CoreComponent coreComponent = new CoreComponent(pipe);
+        CoreComponent coreComponent = new CoreComponent(pipe, new PortImpl());
 
         assertNotNull(coreComponent.getPort());
         assertNotNull(coreComponent.getConnector());

@@ -7,8 +7,8 @@ import java.util.Queue;
 
 public class Pipe implements Connector {
 
-    Queue<byte[]> queue;
-    boolean pipeMessagePrepared;
+    private Queue<byte[]> queue;
+    private boolean pipeMessagePrepared;
     private boolean closed;
 
     public Pipe() {
@@ -28,6 +28,14 @@ public class Pipe implements Connector {
         if (message != null) {
             queue.add(message);
         }
+    }
+
+    @Override
+    public byte[] readMessage() {
+        if (!queue.isEmpty()) {
+            return queue.remove();
+        }
+        return new byte[0];
     }
 
     public Queue<byte[]> getQueue() {
