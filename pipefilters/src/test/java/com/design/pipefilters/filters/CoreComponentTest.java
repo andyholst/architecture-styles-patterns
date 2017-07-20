@@ -18,4 +18,14 @@ public class CoreComponentTest {
 
         coreComponent.appendMessage(byteArrayOutputStream.toByteArray());
     }
+
+    @Test
+    public void testRunCoreComponentWithEmptyMessage() {
+        Pipe pipe = new Pipe();
+        CoreComponent coreComponent = new CoreComponent(pipe, new PortImpl());
+
+        coreComponent.pipe.setPipeMessagePrepared(true);
+
+        coreComponent.run();
+    }
 }
