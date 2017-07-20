@@ -32,9 +32,13 @@ import static org.junit.Assert.assertNotNull;
 public class KnightTest {
 
     @Test
-    public void createKnightTrueTest() {
-        Soldier knight = new KnightBuilder().withName("Sir Arthur").withArmor(true).withShield(true).withSword(true)
-                .withKnife(true).build();
+    void createKnightTrueTest() {
+        SoldierBuilder knightBuilder = new KnightBuilder().withName("Sir Arthur").withArmor(true).withShield(true)
+                .withSword
+                        (true)
+                .withKnife(true);
+
+        Soldier knight = knightBuilder.build();
 
         assertNotNull(knight);
         assertEquals("Sir Arthur", knight.getName());
@@ -45,7 +49,7 @@ public class KnightTest {
     }
 
     @Test
-    public void createKnightFalseTest() {
+    void createKnightFalseTest() {
         Soldier knight = new KnightBuilder().withName("Sir Arthur").build();
 
         assertNotNull(knight);
@@ -57,7 +61,7 @@ public class KnightTest {
     }
 
     @Test
-    public void createKnightWithFalseTest() {
+    void createKnightWithFalseTest() {
         Soldier knight = new KnightBuilder().withName("Sir Arthur").withArmor(false).withShield(false).withSword(false)
                 .withKnife(false).build();
 
@@ -70,7 +74,7 @@ public class KnightTest {
     }
 
     @Test
-    public void createKnightDuplicatedWithTest() {
+    void createKnightDuplicatedWithTest() {
         Soldier knight = new KnightBuilder().withName("Sir Arthur").withArmor(true).withShield(true).withSword(true)
                 .withKnife(true).withArmor(true).withShield(true).withSword(true).withKnife(true).build();
 
