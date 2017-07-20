@@ -3,10 +3,10 @@
 The styles, tactics and patterns and design patterns you should understand to work as a solution architect aka software 
 architect.
 
-The styles, tactics and patterns and design patterns that have been exemplified (resolved todos), can been viewed as 
+The styles, tactics and patterns and design patterns that have been exemplified (resolved todo), can been viewed as 
 a code model and some form of model expressing the design model or the domain model.
 
-The examples exmplified will reflect the styles, tactics and patterns, both architectural pattern and design patterns, 
+The examples exemplified will reflect the styles, tactics and patterns, both architectural pattern and design patterns, 
 you can view the uml diagrams of the implementations. There will be architecture-evident-coding to express the styles
  in the code.
 
@@ -14,7 +14,7 @@ you can view the uml diagrams of the implementations. There will be architecture
 [Statistics of code quality & test coverage](https://sonarcloud.io/dashboard?id=com.design%3Aarchitecture-styles-patterns)
 
 # Table of Contents
-1. [Archtitectural styles](#styles)
+1. [Architectural styles](#styles)
     1. [Structure](#archstructure)
     2. [Shared memory](#archsharedmem)
     3. [Messaging](#archmessaging)
@@ -25,7 +25,7 @@ you can view the uml diagrams of the implementations. There will be architecture
     1. [Creational patterns](#creational)
     2. [Structural patterns](#structural)
     3. [Behavioural patterns](#behavioural)
-4. [Design pattern explaination](#designpatternexplination)
+4. [Design pattern explanation](#designpatternexplination)
 5. [Reference](#reference)
 
 # Architectural styles <a name="styles"></a>
@@ -56,7 +56,7 @@ you can view the uml diagrams of the implementations. There will be architecture
 
 [Publish-Subscribe](./README.md) - TODO
 
-## Adapative systems <a name="archadaptive"></a>
+## Adaptive systems <a name="archadaptive"></a>
 
 [Domain Specific Languages](./README.md) - TODO
 
@@ -152,7 +152,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Proxy](./README.md) - TODO
 
-## Behavioural patterns - Charactize the ways in which classes or objects interact and distribute responsibility <a name="behavioural"></a>
+## Behavioural patterns - Characterize the ways in which classes or objects interact and distribute responsibility <a name="behavioural"></a>
 
 [Chain Of Responsibility](./README.md) - TODO
 
@@ -160,7 +160,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Interpreter](./README.md) - TODO
 
-[Iterator](./README.md) - TODDO
+[Iterator](./README.md) - TODO
 
 [Mediator](./README.md) - TODO
 
@@ -176,9 +176,9 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Visitor](./README.md) - TODO
 
-# Design pattern explaination <a name="designpatternexplination"></a>
+# Design pattern explanation <a name="designpatternexplination"></a>
 
-Explaination of what the design patterns might be used to [1].
+Explanation of what the design patterns might be used to [1].
 
 ## Creating an object by specifying a class explicitly - Abstract Factory, Factory Method, Prototype
 
