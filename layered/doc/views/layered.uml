@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.design.layered</OriginalElement>
+  <nodes>
+    <node x="227.25" y="0.0">com.design.layered.Layer</node>
+    <node x="300.0" y="80.0">com.design.layered.ClientLayer</node>
+    <node x="0.0" y="80.0">com.design.layered.BusinessLayer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.design.layered.BusinessLayer" target="com.design.layered.Layer">
+      <point x="0.0" y="-26.0" />
+      <point x="140.0" y="55.0" />
+      <point x="248.0" y="55.0" />
+      <point x="-20.75" y="15.0" />
+    </edge>
+    <edge source="com.design.layered.ClientLayer" target="com.design.layered.Layer">
+      <point x="0.0" y="-26.0" />
+      <point x="397.5" y="55.0" />
+      <point x="289.5" y="55.0" />
+      <point x="20.75" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="138.5" y="92.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

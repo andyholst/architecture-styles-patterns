@@ -34,7 +34,7 @@ you can view the uml diagrams of the implementations. There will be architecture
 
 [Component](./component/README.md)
 
-[Layered](./README.md) - TODO
+[Layered](./layered/README.md)
 
 [Monolithic application](./README.md) - TODO
 
