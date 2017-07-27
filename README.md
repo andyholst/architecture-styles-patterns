@@ -126,7 +126,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 ## Creational patterns - Object creation <a name="creational"></a>
 
-[Abstract Factory](./README.md) - TODO
+[Abstract Factory](./abstract-factory/README.md)
 
 [Builder](./builder/README.md)
 

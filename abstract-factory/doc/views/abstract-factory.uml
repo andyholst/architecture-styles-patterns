@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.design.factory</OriginalElement>
+  <nodes>
+    <node x="0.0" y="102.0">com.design.factory.CarFactory</node>
+    <node x="211.9" y="204.0">com.design.factory.VolvoFactory</node>
+    <node x="272.2833333333333" y="0.0">com.design.factory.CarModel</node>
+    <node x="279.0" y="102.0">com.design.factory.VolvoCar</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.design.factory.VolvoFactory" target="com.design.factory.CarModel">
+      <point x="64.75" y="-26.0" />
+      <point x="406.15" y="179.0" />
+      <point x="525.5" y="179.0" />
+      <point x="525.5" y="77.0" />
+      <point x="468.95000000000005" y="77.0" />
+      <point x="78.66666666666669" y="26.0" />
+    </edge>
+    <edge source="com.design.factory.VolvoCar" target="com.design.factory.CarModel">
+      <point x="0.0" y="-26.0" />
+      <point x="397.0" y="77.0" />
+      <point x="390.2833333333333" y="77.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.design.factory.CarFactory" target="com.design.factory.CarModel">
+      <point x="0.0" y="-26.0" />
+      <point x="129.5" y="77.0" />
+      <point x="311.6166666666667" y="77.0" />
+      <point x="-78.66666666666669" y="26.0" />
+    </edge>
+    <edge source="com.design.factory.VolvoFactory" target="com.design.factory.CarFactory">
+      <point x="-64.75" y="-26.0" />
+      <point x="276.65" y="179.0" />
+      <point x="129.5" y="179.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="450.5" y="133.0" />
+  <SelectedNodes>
+    <node>com.design.factory.VolvoFactory</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
