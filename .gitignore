@@ -126,3 +126,6 @@ hs_err_pid*
 
 # Target
 target/
+
+#DS_Store
+.DS_Store
