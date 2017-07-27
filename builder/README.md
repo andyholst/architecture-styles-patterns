@@ -2,9 +2,10 @@
     * Creational
 
 ## Intent
-Separate the construction of a complex object from its
-representation so that the same construction process can create different
-representations.
+Separate the construction of a complex object from its representation so that the same construction process can create 
+different representations.
+
+![alt text](./doc/views/builder.png "Builder pattern")
 
 ## Applicability
 Use the Builder pattern when
@@ -21,4 +22,5 @@ Use the Builder pattern when
 * [Apache Camel builders](https://github.com/apache/camel/tree/0e195428ee04531be27a0b659005e3aa8d159d23/camel-core/src/main/java/org/apache/camel/builder)
 
 ## Reference
-[1] Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides.
+[Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson and John 
+Vlissides.](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/)
