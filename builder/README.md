@@ -5,7 +5,7 @@
 Separate the construction of a complex object from its representation so that the same construction process can create 
 different representations.
 
-![alt text](./doc/views/builder.png "Builder pattern")
+![alt text](./doc/views/builder.png "Builder")
 
 ## Applicability
 Use the Builder pattern when
