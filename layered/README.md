@@ -14,5 +14,7 @@ among the layers: the relations must be unidirectional. Layers completely partit
 partition is exposed through a public interface. The layers are created to interact according to a strict ordering 
 relation.
 
+![alt text](./doc/views/layered.png "Layered")
+
 ## Reference
-[1] Bass, Len. Software Architecture in Practice
+[Software Architecture in Practice by Len Bass, Paul Clements, Rick Kazman](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)

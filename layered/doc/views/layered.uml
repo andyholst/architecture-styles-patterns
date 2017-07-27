@@ -3,29 +3,40 @@
   <ID>JAVA</ID>
   <OriginalElement>com.design.layered</OriginalElement>
   <nodes>
-    <node x="227.25" y="0.0">com.design.layered.Layer</node>
-    <node x="300.0" y="80.0">com.design.layered.ClientLayer</node>
-    <node x="0.0" y="80.0">com.design.layered.BusinessLayer</node>
+    <node x="110.0" y="0.0">com.design.layered.Layer</node>
+    <node x="0.0" y="80.0">com.design.layered.ClientLayer</node>
+    <node x="11.5" y="205.0">com.design.layered.BusinessLayer</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.design.layered.BusinessLayer" target="com.design.layered.Layer">
-      <point x="0.0" y="-26.0" />
-      <point x="140.0" y="55.0" />
-      <point x="248.0" y="55.0" />
-      <point x="-20.75" y="15.0" />
+    <edge source="com.design.layered.BusinessLayer" target="com.design.layered.ClientLayer">
+      <point x="-70.0" y="-37.5" />
+      <point x="81.5" y="180.0" />
+      <point x="97.5" y="180.0" />
+      <point x="0.0" y="37.5" />
     </edge>
-    <edge source="com.design.layered.ClientLayer" target="com.design.layered.Layer">
-      <point x="0.0" y="-26.0" />
-      <point x="397.5" y="55.0" />
-      <point x="289.5" y="55.0" />
+    <edge source="com.design.layered.BusinessLayer" target="com.design.layered.Layer">
+      <point x="70.0" y="-37.5" />
+      <point x="221.5" y="180.0" />
+      <point x="205.5" y="180.0" />
+      <point x="205.5" y="55.0" />
+      <point x="172.25" y="55.0" />
       <point x="20.75" y="15.0" />
     </edge>
+    <edge source="com.design.layered.ClientLayer" target="com.design.layered.Layer">
+      <point x="0.0" y="-37.5" />
+      <point x="97.5" y="55.0" />
+      <point x="130.75" y="55.0" />
+      <point x="-20.75" y="15.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="138.5" y="92.5" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="139.0" y="293.5" />
+  <SelectedNodes>
+    <node>com.design.layered.BusinessLayer</node>
+  </SelectedNodes>
   <Categories>
     <Category>Methods</Category>
+    <Category>Constructors</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
   <VISIBILITY>private</VISIBILITY>
