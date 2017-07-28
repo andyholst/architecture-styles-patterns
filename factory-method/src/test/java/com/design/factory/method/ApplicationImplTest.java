@@ -38,6 +38,8 @@ public class ApplicationImplTest {
 
         Document document = application.createDocument();
 
+        application.openDocument(); // sonar test coverage
+
         assertNull(document.getState());
 
         assertNotNull(document);
@@ -49,6 +51,19 @@ public class ApplicationImplTest {
         assertEquals(1, application.getDocuments().size());
 
         assertEquals(application.getCurrentDocument().hashCode(), application.getDocuments().get(0).hashCode());
+
+        application.openDocument();
+
+        assertEquals(DocumentImpl.DocumentEnum.OPEN, DocumentImpl.DocumentEnum.valueOf(application.getCurrentDocument()
+                .getState()));
+
+        application.newDocument();
+
+        assertNotNull(application.getCurrentDocument());
+
+        assertEquals(2, application.getDocuments().size());
+
+        assertEquals(application.getCurrentDocument().hashCode(), application.getDocuments().get(1).hashCode());
 
         application.openDocument();
 
