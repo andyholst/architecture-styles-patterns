@@ -36,6 +36,7 @@
         <module>pipefilters</module>
         <module>layered</module>
         <module>abstract-factory</module>
+        <module>factory-method</module>
     </modules>
     <packaging>pom</packaging>
     <inceptionYear>2017</inceptionYear>
