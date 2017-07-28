@@ -36,7 +36,7 @@ you can view the uml diagrams of the implementations. There will be architecture
 
 [Layered](./layered/README.md)
 
-[Monolithic application](./README.md) - TODO
+[Monolithic Application](./monolithic-application/README.md)
 
 [Pipes And Filters](./pipefilters/README.md)
 

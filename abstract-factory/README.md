@@ -1,4 +1,4 @@
-## Abstract Factory pattern
+# Abstract Factory pattern
     * Creational
 
 ## Intent

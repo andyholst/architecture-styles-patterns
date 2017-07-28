@@ -1,4 +1,4 @@
-## Layered structure
+# Layered structure
 
 ## Intent
 All complex systems experience the need to develop and evolve portions of the system independently. For this reason 
