@@ -38,7 +38,7 @@ import java.util.concurrent.TimeoutException;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class PipeFilterTest {
+public class PipeFilterTestCase {
 
     @Test
     public void testComponentCommunicationThroughPipeFilter() throws InterruptedException, TimeoutException {

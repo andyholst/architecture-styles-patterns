@@ -37,7 +37,9 @@
         <module>layered</module>
         <module>abstract-factory</module>
         <module>factory-method</module>
+        <module>service</module>
         <module>monolithic-application</module>
+        <module>build</module>
     </modules>
     <packaging>pom</packaging>
     <inceptionYear>2017</inceptionYear>

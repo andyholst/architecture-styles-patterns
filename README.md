@@ -80,6 +80,8 @@ you can view the uml diagrams of the implementations. There will be architecture
 
 [Service-Oriented](./README.md) - TODO
 
+[Service EJB](./service/README.md)
+
 [Shared Nothing Architecture](./README.md) - TODO
 
 [Space-Based Architecture](./README.md) - TODO

@@ -22,24 +22,18 @@
  * SOFTWARE.
  */
 
-package com.design.factory;
+package com.design.monolithic.application;
 
-import org.junit.Test;
+import java.time.LocalDate;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-import java.util.ArrayList;
-import java.util.List;
+public class BusinessApplication {
 
-import static org.junit.Assert.assertEquals;
+    private static final Logger LOG = Logger.getLogger(BusinessApplication.class.getName());
 
-public class VolvoFactoryTest {
-    @Test
-    public void testCreateVolvo() {
-        List<CarModel> carModelList = new ArrayList<>();
-
-        CarFactory carFactory = new VolvoFactory();
-
-        carModelList.add(carFactory.createCar(new VolvoCar()));
-
-        assertEquals("Volvo XC90", carModelList.get(0).getCarModel("XC90"));
+    public void app() {
+        String message = "Time is " + LocalDate.now().toString();
+        LOG.log(Level.FINE, message);
     }
 }

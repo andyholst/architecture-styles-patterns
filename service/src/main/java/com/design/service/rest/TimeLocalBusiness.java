@@ -22,17 +22,7 @@
  * SOFTWARE.
  */
 
-package com.design.rest;
+package com.design.service.rest;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-
-@Path("/api")
-@Produces("application/json")
-public class Api {
-    @GET
-    public String getApiInfo() {
-        return "Api version 0.1";
-    }
+public interface TimeLocalBusiness extends Time {
 }

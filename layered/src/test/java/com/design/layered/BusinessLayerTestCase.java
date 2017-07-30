@@ -28,7 +28,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class BusinessLayerTest {
+public class BusinessLayerTestCase {
     @Test
     public void testClientBusinessLayers() {
         String json = "{\"header\": \"data\"}";

@@ -22,48 +22,18 @@
  * SOFTWARE.
  */
 
-package com.design.factory.method;
+package com.design.monolithic.application;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class DocumentImplTest {
-
-    private Document document;
-
-    @Before
-    public void init() {
-        document = new DocumentImpl();
-    }
-
+public class BusinessApplicationTestCase {
     @Test
-    public void testOpen() throws Exception {
-        assertEquals(null, document.getState());
-        document.open();
-        assertEquals(DocumentImpl.DocumentEnum.OPEN, DocumentImpl.DocumentEnum.valueOf(document.getState()));
-    }
+    public void app() throws Exception {
+        boolean appStarted = true;
 
-    @Test
-    public void testClose() throws Exception {
-        assertEquals(null, document.getState());
-        document.close();
-        assertEquals(DocumentImpl.DocumentEnum.CLOSED, DocumentImpl.DocumentEnum.valueOf(document.getState()));
-    }
-
-    @Test
-    public void testSave() throws Exception {
-        assertEquals(null, document.getState());
-        document.save();
-        assertEquals(DocumentImpl.DocumentEnum.SAVED, DocumentImpl.DocumentEnum.valueOf(document.getState()));
-    }
-
-    @Test
-    public void testRevert() throws Exception {
-        assertEquals(null, document.getState());
-        document.revert();
-        assertEquals(DocumentImpl.DocumentEnum.REVERTED, DocumentImpl.DocumentEnum.valueOf(document.getState()));
+        assertEquals(true, appStarted);
     }
 
 }

@@ -28,7 +28,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ApplicationImplTest {
+public class ApplicationImplTestCase {
     @Test
     public void testApplicationTest() {
         Application application = new ApplicationImpl();

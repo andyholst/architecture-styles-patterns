@@ -29,7 +29,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class KnightTest {
+public class KnightTestCase {
 
     @Test
     public void createKnightTrueTest() {

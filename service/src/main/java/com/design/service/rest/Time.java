@@ -22,19 +22,8 @@
  * SOFTWARE.
  */
 
-package com.design.rest;
+package com.design.service.rest;
 
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
-
-public class ApiTest {
-    @Test
-    public void getApiInfo() throws Exception {
-
-        Api api = new Api();
-
-        assertEquals("Api version 0.1", api.getApiInfo());
-    }
-
+public interface Time {
+    String getCurrentTime();
 }
