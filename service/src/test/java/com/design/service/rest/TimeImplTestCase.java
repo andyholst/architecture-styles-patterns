@@ -34,7 +34,7 @@ import static org.junit.Assert.assertEquals;
 public class TimeImplTestCase {
     @Test
     public void testCurrentTime() throws Exception {
-        Time time = new TimeImpl();
+        TimeImpl time = new TimeImpl();
 
         String currentTime = time.getCurrentTime();
 
