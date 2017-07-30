@@ -31,10 +31,10 @@ import java.util.regex.Pattern;
 
 import static org.junit.Assert.assertEquals;
 
-public class RestTimeServiceBeanTestCase {
+public class TimeImplUnitTestCase {
     @Test
-    public void testCurrentTime() {
-        Time time = new RestTimeServiceBean();
+    public void testCurrentTime() throws Exception {
+        TimeImpl time = new TimeImpl();
 
         String currentTime = time.getCurrentTime();
 
@@ -45,16 +45,4 @@ public class RestTimeServiceBeanTestCase {
         assertEquals(true, matcher.matches());
     }
 
-    @Test
-    public void testRestServiceBeanTest() {
-        RestTimeServiceBean restTimeServiceBean = new RestTimeServiceBean();
-
-        String currentTime = restTimeServiceBean.getCurrentSystemTime();
-
-        Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
-
-        Matcher matcher = pattern.matcher(currentTime);
-
-        assertEquals(true, matcher.matches());
-    }
 }

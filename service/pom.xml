@@ -151,7 +151,7 @@ AS7-1557
                                     <trimStackTrace>false</trimStackTrace>
                                     <printSummary>true</printSummary>
                                     <includes>
-                                        <include>**/*TestCase.java</include>
+                                        <include>**/*IntegrationTestCase.java</include>
                                     </includes>
                                     <forkMode>once</forkMode>
                                 </configuration>
