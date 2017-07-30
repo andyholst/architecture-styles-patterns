@@ -33,6 +33,10 @@ public class BusinessApplicationTestCase {
     public void app() throws Exception {
         boolean appStarted = true;
 
+        BusinessApplication businessApplication = new BusinessApplication();
+
+        businessApplication.app();
+
         assertEquals(true, appStarted);
     }
 
