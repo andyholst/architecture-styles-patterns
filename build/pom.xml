@@ -71,12 +71,12 @@
                 <version>2.3.2</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <showDeprecation>false</showDeprecation>
                     <showWarnings>true</showWarnings>
                     <optimize>true</optimize>
-                    <compilerVersion>1.6</compilerVersion>
+                    <compilerVersion>1.8</compilerVersion>
                     <fork>true</fork>
                     <executable>/usr/bin/javac</executable>
                     <encoding>UTF-8</encoding>
@@ -113,10 +113,10 @@
                 <configuration>
                     <rules>
                         <requireMavenVersion>
-                            <version>[2.0.9,)</version> <!-- Must be Maven 2.0.9 -->
+                            <version>[2.0.9,)</version>
                         </requireMavenVersion>
                         <requireJavaVersion>
-                            <version>1.6.0</version> <!-- Must be JDK6 -->
+                            <version>1.8.0</version>
                         </requireJavaVersion>
                     </rules>
                 </configuration>
