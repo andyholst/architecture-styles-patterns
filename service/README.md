@@ -1,7 +1,7 @@
 # EJB Service (proxy) pattern
 
 ## Intent
-Obtain a proxy reference to an EJB service,
+Obtain a proxy reference to an EJB service. Demonstrating how to use and test EJB services.
 
 ![alt text](./doc/views/restTimeService.png "EJB Service")
 
