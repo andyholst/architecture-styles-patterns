@@ -61,133 +61,33 @@
 
     <!-- Build Configuration -->
     <build>
-
         <plugins>
-
             <!-- Compiler -->
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
-                <inherited>true</inherited>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <showDeprecation>false</showDeprecation>
-                    <showWarnings>true</showWarnings>
-                    <optimize>true</optimize>
-                    <compilerVersion>1.8</compilerVersion>
-                    <fork>true</fork>
-                    <executable>/usr/bin/javac</executable>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.3</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
 
             <!-- Surefire (Tests) Plugin -->
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.20</version><!--$NO-MVN-MAN-VER$--> <!-- Comment required to suppress m23 warning -->
+                <version>2.20</version>
                 <configuration>
-                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
-                    <printSummary>true</printSummary>
                     <includes>
                         <include>**/*UnitTestCase.java</include>
                     </includes>
-                    <forkCount>0</forkCount>
-                    <argLine>-ea</argLine>
                 </configuration>
             </plugin>
-
-            <!-- Enforce Maven Environment -->
-            <plugin>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <version>1.0-beta-1</version>
-                <executions>
-                    <execution>
-                        <id>enforce-maven-environment</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <rules>
-                        <requireMavenVersion>
-                            <version>[2.0.9,)</version>
-                        </requireMavenVersion>
-                        <requireJavaVersion>
-                            <version>1.8.0</version>
-                        </requireJavaVersion>
-                    </rules>
-                </configuration>
-            </plugin>
-
         </plugins>
-
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.20</version>
-                </plugin>
-                <!-- So m2e doesn't throw errors for features it doesn't support in the POM -->
-                <plugin>
-                    <groupId>org.eclipse.m2e</groupId>
-                    <artifactId>lifecycle-mapping</artifactId>
-                    <version>1.0.0</version>
-                    <configuration>
-                        <lifecycleMappingMetadata>
-                            <pluginExecutions>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.apache.maven.plugins</groupId>
-                                        <artifactId>maven-dependency-plugin</artifactId>
-                                        <versionRange>[1.0.0,)</versionRange>
-                                        <goals>
-                                            <goal>unpack</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <execute/>
-                                    </action>
-                                </pluginExecution>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.apache.maven.plugins</groupId>
-                                        <artifactId>maven-dependency-plugin</artifactId>
-                                        <versionRange>[1.0.0,)</versionRange>
-                                        <goals>
-                                            <goal>copy-dependencies</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <execute/>
-                                    </action>
-                                </pluginExecution>
-                                <pluginExecution>
-                                    <pluginExecutionFilter>
-                                        <groupId>org.apache.maven.plugins</groupId>
-                                        <artifactId>maven-enforcer-plugin</artifactId>
-                                        <versionRange>[1.0.0,)</versionRange>
-                                        <goals>
-                                            <goal>enforce</goal>
-                                        </goals>
-                                    </pluginExecutionFilter>
-                                    <action>
-                                        <execute/>
-                                    </action>
-                                </pluginExecution>
-                            </pluginExecutions>
-                        </lifecycleMappingMetadata>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-
     </build>
 
     <!-- Dependency Versioning -->
     <dependencyManagement>
-
         <dependencies>
             <dependency>
                 <groupId>org.jboss.as</groupId>
@@ -306,10 +206,7 @@
                 <artifactId>javax.inject</artifactId>
                 <version>${version.javax.inject_javax.inject}</version>
             </dependency>
-
-
         </dependencies>
-
     </dependencyManagement>
 
     <repositories>
@@ -343,5 +240,4 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
 </project>

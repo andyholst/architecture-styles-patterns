@@ -22,10 +22,8 @@
  * SOFTWARE.
  */
 
-package com.design.service;
+package com.design.service.rest;
 
-import com.design.service.rest.RestTimeServiceBean;
-import com.design.service.rest.Time;
 import org.junit.Test;
 
 import java.util.regex.Matcher;
