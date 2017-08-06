@@ -141,7 +141,7 @@
                                     <includes>
                                         <include>**/*IntegrationTestCase.java</include>
                                     </includes>
-                                    <forkMode>once</forkMode>
+                                    <forkCount>1</forkCount>
                                 </configuration>
                             </execution>
                         </executions>
