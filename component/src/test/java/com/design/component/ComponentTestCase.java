@@ -34,7 +34,7 @@ import static org.junit.Assert.assertNotNull;
 
 public class ComponentTestCase {
 
-    /*@Test
+    @Test
     public void componentTest() {
         Component component = new ComponentImpl();
 
@@ -66,5 +66,5 @@ public class ComponentTestCase {
         assertEquals(0, component.getPort().readMessage("".getBytes()).length);
 
         assertEquals("", new String(component.getConnector().readMessage(), StandardCharsets.UTF_8));
-    }*/
+    }
 }
