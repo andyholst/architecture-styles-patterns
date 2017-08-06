@@ -35,9 +35,7 @@ public class RestTimeServiceBeanUnitTestCase {
     @Test
     public void testCurrentTime() {
         Time time = new RestTimeServiceBean();
-
         String currentTime = time.getCurrentTime();
-
         Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
 
         Matcher matcher = pattern.matcher(currentTime);
@@ -50,6 +48,8 @@ public class RestTimeServiceBeanUnitTestCase {
         RestTimeServiceBean restTimeServiceBean = new RestTimeServiceBean();
 
         String currentTime = restTimeServiceBean.getCurrentSystemTime();
+
+        assertEquals(true, !currentTime.isEmpty());
 
         Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
 

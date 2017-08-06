@@ -34,9 +34,11 @@ import static org.junit.Assert.assertEquals;
 public class TimeImplUnitTestCase {
     @Test
     public void testCurrentTime() throws Exception {
-        TimeImpl time = new TimeImpl();
+        Time time = new TimeImpl();
 
         String currentTime = time.getCurrentTime();
+
+        assertEquals(true, !currentTime.isEmpty());
 
         Pattern pattern = Pattern.compile("\\d{4}-\\d{2}-\\d{2}");
 
