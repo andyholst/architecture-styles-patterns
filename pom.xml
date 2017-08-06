@@ -40,6 +40,7 @@
         <module>service</module>
         <module>monolithic-application</module>
         <module>build</module>
+        <module>service-tests</module>
     </modules>
     <packaging>pom</packaging>
     <inceptionYear>2017</inceptionYear>
