@@ -134,7 +134,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Factory Method](./factory-method/README.md)
 
-[Prototype](./README.md) - TODO
+[Prototype](./prototype/README.md)
 
 [Singleton](./README.md) - TODO
 

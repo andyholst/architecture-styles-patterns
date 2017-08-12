@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.design.prototype</OriginalElement>
+  <nodes>
+    <node x="318.5" y="135.0">com.design.factory.CarFactory</node>
+    <node x="47.17857142857139" y="248.0">com.design.factory.VolvoFactory</node>
+    <node x="82.5" y="0.0">com.design.factory.CarModel</node>
+    <node x="7.5" y="128.0">com.design.factory.VolvoCar</node>
+    <node x="458.0" y="248.0">com.design.prototype.CarPrototypeFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.design.prototype.CarPrototypeFactory" target="com.design.factory.CarFactory">
+      <point x="-64.75" y="-26.0" />
+      <point x="522.75" y="223.0" />
+      <point x="512.75" y="223.0" />
+      <point x="64.75" y="26.0" />
+    </edge>
+    <edge source="com.design.factory.VolvoCar" target="com.design.factory.CarModel">
+      <point x="72.0" y="-37.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="com.design.factory.VolvoFactory" target="com.design.factory.CarFactory">
+      <point x="64.75" y="-26.0" />
+      <point x="241.4285714285714" y="223.0" />
+      <point x="383.25" y="223.0" />
+      <point x="-64.75" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="103.0" y="273.0" />
+  <SelectedNodes>
+    <node>com.design.factory.VolvoCar</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -22,9 +22,31 @@
  * SOFTWARE.
  */
 
-package com.design.factory;
+package com.design.prototype;
 
-public interface CarModel {
-    String getCarModel(String model);
-    CarModel copyCarModel(CarModel carModel);
+import com.design.factory.CarModel;
+import com.design.factory.VolvoCar;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class CarPrototypeFactoryTest {
+    @Test
+    public void testCarProtoTypeFactory() {
+        CarPrototypeFactory carPrototypeFactory = null;
+
+        assertNull(carPrototypeFactory);
+
+        carPrototypeFactory = new CarPrototypeFactory();
+
+        CarModel carModel1 = carPrototypeFactory.createCar(new VolvoCar());
+
+        assertEquals("Volvo", carModel1.getCarModel("").trim());
+
+        CarModel carModel2 = carPrototypeFactory.createCar(carModel1);
+
+        assertEquals("Volvo X", carModel2.getCarModel("X"));
+
+        assertNotEquals(carModel1, carModel2);
+    }
 }

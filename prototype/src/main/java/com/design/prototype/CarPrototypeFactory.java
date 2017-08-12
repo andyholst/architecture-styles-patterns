@@ -22,9 +22,14 @@
  * SOFTWARE.
  */
 
-package com.design.factory;
+package com.design.prototype;
 
-public interface CarModel {
-    String getCarModel(String model);
-    CarModel copyCarModel(CarModel carModel);
+import com.design.factory.CarFactory;
+import com.design.factory.CarModel;
+
+public class CarPrototypeFactory implements CarFactory {
+    @Override
+    public CarModel createCar(CarModel carModel) {
+        return carModel.copyCarModel(carModel);
+    }
 }

@@ -29,4 +29,21 @@ public class VolvoCar implements CarModel {
     public String getCarModel(String model) {
         return "Volvo " + model;
     }
+
+    public VolvoCar() {
+        // Default volvo car constructor
+    }
+
+    @Override
+    public CarModel copyCarModel(CarModel carModel) {
+        return new VolvoCar((VolvoCar) carModel);
+    }
+
+    public VolvoCar(String carModel) {
+        // Nothing is needed here
+    }
+
+    public VolvoCar(VolvoCar volvoCar) {
+        this(volvoCar.getCarModel(""));
+    }
 }
