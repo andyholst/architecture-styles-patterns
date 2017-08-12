@@ -3,46 +3,54 @@
   <ID>JAVA</ID>
   <OriginalElement>com.design.service.rest</OriginalElement>
   <nodes>
-    <node x="189.0" y="113.0">com.design.service.rest.TimeLocalBusiness</node>
-    <node x="127.9" y="204.0">com.design.service.rest.RestTimeServiceBean</node>
+    <node x="237.00000000000003" y="113.0">com.design.service.rest.TimeLocalBusiness</node>
+    <node x="178.20000000000005" y="204.0">com.design.service.rest.RestTimeServiceBean</node>
     <node x="0.0" y="102.0">com.design.service.rest.TimeImpl</node>
-    <node x="185.5666666666667" y="0.0">com.design.service.rest.Time</node>
+    <node x="208.20000000000005" y="0.0">com.design.service.rest.Time</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.design.service.rest.TimeImpl" target="com.design.service.rest.Time">
       <point x="0.0" y="-26.0" />
-      <point x="84.5" y="77.0" />
-      <point x="213.73333333333335" y="77.0" />
-      <point x="-56.33333333333334" y="26.0" />
+      <point x="108.5" y="77.0" />
+      <point x="244.36666666666673" y="77.0" />
+      <point x="-72.33333333333331" y="26.0" />
+    </edge>
+    <edge source="com.design.service.rest.RestTimeServiceBean" target="com.design.service.rest.TimeLocalBusiness">
+      <point x="0.0" y="-26.0" />
+      <point x="309.20000000000005" y="179.0" />
+      <point x="320.5" y="179.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.design.service.rest.RestTimeServiceBean" target="com.design.service.rest.Time">
+      <point x="87.33333333333331" y="-26.0" />
+      <point x="396.53333333333336" y="179.0" />
+      <point x="414.5" y="179.0" />
+      <point x="414.5" y="77.0" />
+      <point x="389.03333333333336" y="77.0" />
+      <point x="72.33333333333331" y="26.0" />
     </edge>
     <edge source="com.design.service.rest.TimeLocalBusiness" target="com.design.service.rest.Time">
       <point x="0.0" y="-15.0" />
-      <point x="272.5" y="77.0" />
-      <point x="270.0666666666667" y="77.0" />
+      <point x="320.5" y="77.0" />
+      <point x="316.70000000000005" y="77.0" />
       <point x="0.0" y="26.0" />
     </edge>
-    <edge source="com.design.service.rest.RestTimeServiceBean" target="com.design.service.rest.Time">
-      <point x="53.5" y="-26.0" />
-      <point x="288.4" y="179.0" />
-      <point x="366.5" y="179.0" />
-      <point x="366.5" y="77.0" />
-      <point x="326.4" y="77.0" />
-      <point x="56.333333333333314" y="26.0" />
-    </edge>
     <edge source="com.design.service.rest.RestTimeServiceBean" target="com.design.service.rest.TimeImpl">
-      <point x="-53.5" y="-26.0" />
-      <point x="181.4" y="179.0" />
-      <point x="84.5" y="179.0" />
+      <point x="-87.33333333333331" y="-26.0" />
+      <point x="221.86666666666673" y="179.0" />
+      <point x="108.5" y="179.0" />
       <point x="0.0" y="26.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="151.0" y="170.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="151.0" y="191.0" />
+  <SelectedNodes>
+    <node>com.design.service.rest.Time</node>
+  </SelectedNodes>
   <Categories>
-    <Category>Properties</Category>
-    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
     <Category>Constructors</Category>
+    <Category>Methods</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
   <VISIBILITY>private</VISIBILITY>

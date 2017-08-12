@@ -30,13 +30,14 @@
       <point x="-20.75" y="15.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="139.0" y="293.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="139.0" y="334.5" />
   <SelectedNodes>
     <node>com.design.layered.BusinessLayer</node>
   </SelectedNodes>
   <Categories>
-    <Category>Methods</Category>
     <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
   <VISIBILITY>private</VISIBILITY>

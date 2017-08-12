@@ -3,92 +3,93 @@
   <ID>JAVA</ID>
   <OriginalElement>com.design.component</OriginalElement>
   <nodes>
-    <node x="527.6875" y="291.0">com.design.component.Component</node>
-    <node x="0.0" y="145.0">com.design.component.ConnectorImpl</node>
-    <node x="339.25" y="134.0">com.design.component.Port</node>
-    <node x="393.02202380952383" y="436.0">com.design.component.ComponentImpl</node>
-    <node x="159.75" y="280.0">com.design.component.PortImpl</node>
-    <node x="495.2636904761905" y="0.0">com.design.component.Connector</node>
+    <node x="389.43750000000006" y="291.0">com.design.component.Component</node>
+    <node x="575.4375" y="145.0">com.design.component.ConnectorImpl</node>
+    <node x="201.00000000000006" y="134.0">com.design.component.Port</node>
+    <node x="240.22797619047623" y="436.0">com.design.component.ComponentImpl</node>
+    <node x="21.500000000000057" y="280.0">com.design.component.PortImpl</node>
+    <node x="108.4363095238096" y="0.0">com.design.component.Connector</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.design.component.ComponentImpl" target="com.design.component.Connector">
-      <point x="100.28571428571433" y="-37.0" />
-      <point x="610.3077380952382" y="416.0" />
-      <point x="783.1875" y="416.0" />
-      <point x="783.1875" y="94.0" />
-      <point x="707.0136904761905" y="94.0" />
-      <point x="96.25000000000001" y="37.0" />
-    </edge>
-    <edge source="com.design.component.Port" target="com.design.component.Connector">
-      <point x="0.0" y="-48.0" />
-      <point x="502.75" y="114.0" />
-      <point x="591.5136904761905" y="114.0" />
-      <point x="-19.25" y="37.0" />
-    </edge>
-    <edge source="com.design.component.Component" target="com.design.component.Port">
-      <point x="-58.5" y="-37.0" />
-      <point x="586.1875" y="255.0" />
-      <point x="625.375" y="255.0" />
-      <point x="122.625" y="48.0" />
-    </edge>
-    <edge source="com.design.component.ComponentImpl" target="com.design.component.Component">
-      <point x="33.428571428571445" y="-37.0" />
-      <point x="543.4505952380953" y="396.0" />
-      <point x="644.6875" y="396.0" />
-      <point x="0.0" y="37.0" />
-    </edge>
     <edge source="com.design.component.ComponentImpl" target="com.design.component.PortImpl">
-      <point x="-66.85714285714278" y="-37.0" />
-      <point x="443.16488095238105" y="406.0" />
-      <point x="323.25" y="406.0" />
+      <point x="-33.42857142857139" y="-37.0" />
+      <point x="323.79940476190484" y="396.0" />
+      <point x="185.00000000000006" y="396.0" />
       <point x="0.0" y="48.0" />
+    </edge>
+    <edge source="com.design.component.ComponentImpl" target="com.design.component.Connector">
+      <point x="-66.8571428571428" y="-37.0" />
+      <point x="290.3708333333334" y="406.0" />
+      <point x="11.0" y="406.0" />
+      <point x="11.0" y="104.0" />
+      <point x="166.1863095238096" y="104.0" />
+      <point x="-57.75" y="37.0" />
     </edge>
     <edge source="com.design.component.PortImpl" target="com.design.component.Port">
       <point x="81.75" y="-48.0" />
-      <point x="405.0" y="255.0" />
-      <point x="380.125" y="255.0" />
+      <point x="266.75000000000006" y="255.0" />
+      <point x="241.87500000000006" y="255.0" />
       <point x="-122.625" y="48.0" />
+    </edge>
+    <edge source="com.design.component.Component" target="com.design.component.Port">
+      <point x="-58.5" y="-37.0" />
+      <point x="447.93750000000006" y="255.0" />
+      <point x="487.12500000000006" y="255.0" />
+      <point x="122.625" y="48.0" />
+    </edge>
+    <edge source="com.design.component.Port" target="com.design.component.Connector">
+      <point x="0.0" y="-48.0" />
+      <point x="364.50000000000006" y="114.0" />
+      <point x="243.1863095238096" y="114.0" />
+      <point x="19.25" y="37.0" />
     </edge>
     <edge source="com.design.component.PortImpl" target="com.design.component.Connector">
       <point x="-81.75" y="-48.0" />
-      <point x="241.5" y="104.0" />
-      <point x="553.0136904761905" y="104.0" />
-      <point x="-57.75" y="37.0" />
+      <point x="103.25000000000006" y="114.0" />
+      <point x="204.6863095238096" y="114.0" />
+      <point x="-19.25" y="37.0" />
     </edge>
     <edge source="com.design.component.Component" target="com.design.component.Connector">
       <point x="58.5" y="-37.0" />
-      <point x="703.1875" y="114.0" />
-      <point x="630.0136904761905" y="114.0" />
-      <point x="19.25" y="37.0" />
+      <point x="564.9375" y="104.0" />
+      <point x="281.6863095238096" y="104.0" />
+      <point x="57.75" y="37.0" />
+    </edge>
+    <edge source="com.design.component.ComponentImpl" target="com.design.component.Component">
+      <point x="66.85714285714286" y="-37.0" />
+      <point x="424.08511904761906" y="406.0" />
+      <point x="506.43750000000006" y="406.0" />
+      <point x="0.0" y="37.0" />
     </edge>
     <edge source="com.design.component.ComponentImpl" target="com.design.component.ConnectorImpl">
-      <point x="-100.28571428571422" y="-37.0" />
-      <point x="409.7363095238096" y="416.0" />
-      <point x="115.5" y="416.0" />
+      <point x="100.28571428571428" y="-37.0" />
+      <point x="457.5136904761905" y="416.0" />
+      <point x="690.9375" y="416.0" />
       <point x="0.0" y="37.0" />
     </edge>
     <edge source="com.design.component.ComponentImpl" target="com.design.component.Port">
-      <point x="-33.42857142857139" y="-37.0" />
-      <point x="476.59345238095244" y="416.0" />
-      <point x="497.25" y="416.0" />
-      <point x="497.25" y="255.0" />
-      <point x="461.875" y="255.0" />
+      <point x="2.8421709430404007E-14" y="-37.0" />
+      <point x="357.2279761904763" y="416.0" />
+      <point x="359.00000000000006" y="416.0" />
+      <point x="359.00000000000006" y="255.0" />
+      <point x="323.62500000000006" y="255.0" />
       <point x="-40.875" y="48.0" />
     </edge>
     <edge source="com.design.component.ConnectorImpl" target="com.design.component.Connector">
       <point x="0.0" y="-37.0" />
-      <point x="115.5" y="94.0" />
-      <point x="514.5136904761905" y="94.0" />
-      <point x="-96.25" y="37.0" />
+      <point x="690.9375" y="94.0" />
+      <point x="320.1863095238096" y="94.0" />
+      <point x="96.25" y="37.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="450.0" y="310.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="450.0" y="371.5" />
   <SelectedNodes>
     <node>com.design.component.ComponentImpl</node>
   </SelectedNodes>
   <Categories>
     <Category>Methods</Category>
+    <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
   <VISIBILITY>public</VISIBILITY>

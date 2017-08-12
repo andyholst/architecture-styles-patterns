@@ -10,12 +10,6 @@
   </nodes>
   <notes />
   <edges>
-    <edge source="com.design.builder.KnightBuilder" target="com.design.builder.Knight">
-      <point x="-35.25" y="-92.5" />
-      <point x="280.35416666666663" y="399.0" />
-      <point x="284.5" y="399.0" />
-      <point x="0.0" y="81.0" />
-    </edge>
     <edge source="com.design.builder.SoldierBuilder" target="com.design.builder.Soldier">
       <point x="0.0" y="-26.0" />
       <point x="78.0" y="192.0" />
@@ -35,21 +29,29 @@
       <point x="0.0" y="26.0" />
     </edge>
     <edge source="com.design.builder.KnightBuilder" target="com.design.builder.Soldier">
-      <point x="35.25" y="-92.5" />
-      <point x="350.85416666666663" y="399.0" />
-      <point x="403.5" y="399.0" />
-      <point x="403.5" y="192.0" />
-      <point x="348.14583333333337" y="192.0" />
-      <point x="27.125" y="81.0" />
+      <point x="105.75" y="-92.5" />
+      <point x="421.35416666666663" y="399.0" />
+      <point x="414.5" y="399.0" />
+      <point x="414.5" y="182.0" />
+      <point x="402.39583333333337" y="182.0" />
+      <point x="81.375" y="81.0" />
+    </edge>
+    <edge source="com.design.builder.KnightBuilder" target="com.design.builder.Knight">
+      <point x="-35.25" y="-92.5" />
+      <point x="280.35416666666663" y="399.0" />
+      <point x="284.5" y="399.0" />
+      <point x="0.0" y="81.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="272.5" y="387.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="273.0" y="308.5" />
   <SelectedNodes>
     <node>com.design.builder.KnightBuilder</node>
   </SelectedNodes>
   <Categories>
-    <Category>Methods</Category>
     <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
   <VISIBILITY>public</VISIBILITY>

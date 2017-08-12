@@ -3,101 +3,104 @@
   <ID>JAVA</ID>
   <OriginalElement>com.design.pipefilters</OriginalElement>
   <nodes>
-    <node x="84.33671874999993" y="346.5">com.design.component.Component</node>
-    <node x="124.83671874999993" y="124.0">com.design.component.Port</node>
-    <node x="0.0" y="547.0">com.design.pipefilters.filters.CoreComponent</node>
-    <node x="338.33671874999993" y="280.0">com.design.pipefilters.pipe.Pipe</node>
-    <node x="454.7476562499999" y="558.0">com.design.pipefilters.filters.ClientComponent</node>
-    <node x="172.83671874999993" y="0.0">com.design.component.Connector</node>
+    <node x="107.89322916666657" y="346.5">com.design.component.Component</node>
+    <node x="151.13359374999993" y="124.0">com.design.component.Port</node>
+    <node x="487.74765624999986" y="557.0">com.design.pipefilters.filters.CoreComponent</node>
+    <node x="361.8932291666666" y="280.0">com.design.pipefilters.pipe.Pipe</node>
+    <node x="0.0" y="568.0">com.design.pipefilters.filters.ClientComponent</node>
+    <node x="199.13359374999993" y="0.0">com.design.component.Connector</node>
   </nodes>
   <notes />
   <edges>
     <edge source="com.design.pipefilters.filters.CoreComponent" target="com.design.component.Component">
-      <point x="20.416666666666686" y="-81.5" />
-      <point x="-58.5" y="37.0" />
-    </edge>
-    <edge source="com.design.pipefilters.filters.ClientComponent" target="com.design.component.Port">
-      <point x="69.5" y="-70.5" />
-      <point x="663.2476562499999" y="527.0" />
-      <point x="701.125" y="527.0" />
-      <point x="701.125" y="240.0" />
-      <point x="419.1367187499999" y="240.0" />
-      <point x="130.79999999999995" y="48.0" />
-    </edge>
-    <edge source="com.design.pipefilters.pipe.Pipe" target="com.design.component.Connector">
-      <point x="0.0" y="-103.5" />
-      <point x="494.83671874999993" y="260.0" />
-      <point x="523.125" y="260.0" />
-      <point x="523.125" y="104.0" />
-      <point x="334.5367187499999" y="104.0" />
-      <point x="46.19999999999999" y="37.0" />
-    </edge>
-    <edge source="com.design.pipefilters.filters.ClientComponent" target="com.design.component.Component">
-      <point x="-115.83333333333337" y="-70.5" />
-      <point x="477.91432291666655" y="507.0" />
-      <point x="259.83671874999993" y="507.0" />
+      <point x="-102.08333333333337" y="-81.5" />
+      <point x="508.1643229166665" y="517.0" />
+      <point x="283.3932291666666" y="517.0" />
       <point x="58.5" y="37.0" />
+    </edge>
+    <edge source="com.design.component.Component" target="com.design.component.Port">
+      <point x="58.5" y="-37.0" />
+      <point x="283.3932291666666" y="260.0" />
+      <point x="314.63359374999993" y="260.0" />
+      <point x="0.0" y="48.0" />
     </edge>
     <edge source="com.design.component.Port" target="com.design.component.Connector">
       <point x="0.0" y="-48.0" />
       <point x="0.0" y="37.0" />
     </edge>
-    <edge source="com.design.component.Component" target="com.design.component.Port">
-      <point x="58.5" y="-37.0" />
-      <point x="259.83671874999993" y="260.0" />
-      <point x="288.33671874999993" y="260.0" />
-      <point x="0.0" y="48.0" />
+    <edge source="com.design.pipefilters.filters.ClientComponent" target="com.design.component.Port">
+      <point x="-69.5" y="-70.5" />
+      <point x="69.5" y="537.0" />
+      <point x="45.50859374999993" y="537.0" />
+      <point x="45.50859374999993" y="250.0" />
+      <point x="183.83359374999992" y="250.0" />
+      <point x="-130.8" y="48.0" />
+    </edge>
+    <edge source="com.design.pipefilters.filters.ClientComponent" target="com.design.component.Component">
+      <point x="23.166666666666657" y="-70.5" />
+      <point x="162.16666666666666" y="537.0" />
+      <point x="166.39322916666657" y="537.0" />
+      <point x="-58.5" y="37.0" />
+    </edge>
+    <edge source="com.design.pipefilters.pipe.Pipe" target="com.design.component.Connector">
+      <point x="0.0" y="-103.5" />
+      <point x="518.3932291666665" y="260.0" />
+      <point x="545.125" y="260.0" />
+      <point x="545.125" y="104.0" />
+      <point x="360.8335937499999" y="104.0" />
+      <point x="46.19999999999999" y="37.0" />
     </edge>
     <edge source="com.design.pipefilters.filters.ClientComponent" target="com.design.component.Connector">
-      <point x="115.83333333333337" y="-70.5" />
-      <point x="709.5809895833333" y="527.0" />
-      <point x="712.125" y="527.0" />
-      <point x="712.125" y="94.0" />
-      <point x="380.7367187499999" y="94.0" />
-      <point x="92.39999999999998" y="37.0" />
+      <point x="-115.83333333333337" y="-70.5" />
+      <point x="23.16666666666663" y="537.0" />
+      <point x="34.50859374999993" y="537.0" />
+      <point x="34.50859374999993" y="94.0" />
+      <point x="222.23359374999993" y="94.0" />
+      <point x="-92.4" y="37.0" />
     </edge>
     <edge source="com.design.component.Component" target="com.design.component.Connector">
       <point x="-58.5" y="-37.0" />
-      <point x="142.83671874999993" y="240.0" />
-      <point x="71.18515624999992" y="240.0" />
-      <point x="71.18515624999992" y="104.0" />
-      <point x="242.13671874999994" y="104.0" />
-      <point x="-46.19999999999999" y="37.0" />
+      <point x="166.39322916666657" y="240.0" />
+      <point x="93.18515624999992" y="240.0" />
+      <point x="93.18515624999992" y="104.0" />
+      <point x="268.43359374999994" y="104.0" />
+      <point x="-46.2" y="37.0" />
     </edge>
     <edge source="com.design.pipefilters.filters.ClientComponent" target="com.design.pipefilters.pipe.Pipe">
-      <point x="-23.166666666666742" y="-70.5" />
-      <point x="570.5809895833331" y="507.0" />
-      <point x="612.2117187499999" y="507.0" />
-      <point x="117.375" y="103.5" />
+      <point x="115.83333333333334" y="-70.5" />
+      <point x="254.83333333333334" y="537.0" />
+      <point x="479.2682291666666" y="537.0" />
+      <point x="-39.125" y="103.5" />
     </edge>
     <edge source="com.design.pipefilters.filters.CoreComponent" target="com.design.component.Connector">
-      <point x="-102.08333333333337" y="-81.5" />
-      <point x="20.41666666666663" y="527.0" />
-      <point x="21.961718749999932" y="527.0" />
-      <point x="21.961718749999932" y="94.0" />
-      <point x="195.93671874999993" y="94.0" />
-      <point x="-92.4" y="37.0" />
+      <point x="102.08333333333337" y="-81.5" />
+      <point x="712.3309895833332" y="537.0" />
+      <point x="727.2057291666665" y="537.0" />
+      <point x="727.2057291666665" y="94.0" />
+      <point x="407.0335937499999" y="94.0" />
+      <point x="92.39999999999998" y="37.0" />
     </edge>
     <edge source="com.design.pipefilters.filters.CoreComponent" target="com.design.pipefilters.pipe.Pipe">
-      <point x="61.25" y="-81.5" />
-      <point x="183.75" y="517.0" />
-      <point x="377.46171874999993" y="517.0" />
-      <point x="-117.375" y="103.5" />
+      <point x="-20.41666666666663" y="-81.5" />
+      <point x="589.8309895833332" y="507.0" />
+      <point x="635.7682291666665" y="507.0" />
+      <point x="117.375" y="103.5" />
     </edge>
     <edge source="com.design.pipefilters.filters.CoreComponent" target="com.design.component.Port">
-      <point x="-61.25" y="-81.5" />
-      <point x="61.25" y="527.0" />
-      <point x="32.96171874999993" y="527.0" />
-      <point x="32.96171874999993" y="250.0" />
-      <point x="157.53671874999992" y="250.0" />
-      <point x="-130.8" y="48.0" />
+      <point x="61.25" y="-81.5" />
+      <point x="671.4976562499999" y="527.0" />
+      <point x="716.2057291666665" y="527.0" />
+      <point x="716.2057291666665" y="240.0" />
+      <point x="445.43359374999994" y="240.0" />
+      <point x="130.8" y="48.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="89.5" y="352.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="90.0" y="393.5" />
   <SelectedNodes />
   <Categories>
     <Category>Constructors</Category>
     <Category>Methods</Category>
+    <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
   <VISIBILITY>public</VISIBILITY>

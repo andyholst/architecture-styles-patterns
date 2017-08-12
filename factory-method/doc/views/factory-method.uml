@@ -3,31 +3,54 @@
   <ID>JAVA</ID>
   <OriginalElement>com.design.factory.method</OriginalElement>
   <nodes>
-    <node x="297.0" y="190.0">com.design.factory.method.DocumentImpl</node>
-    <node x="0.0" y="190.0">com.design.factory.method.Application</node>
-    <node x="357.25714285714287" y="0.0">com.design.factory.method.Document</node>
-    <node x="284.4571428571429" y="380.0">com.design.factory.method.ApplicationImpl</node>
+    <node x="268.0" y="191.0">com.design.factory.method.DocumentImpl</node>
+    <node x="0.0" y="202.5">com.design.factory.method.Application</node>
+    <node x="436.05000000000007" y="0.0">com.design.factory.method.Document</node>
+    <node x="356.95000000000005" y="405.0">com.design.factory.method.ApplicationImpl</node>
   </nodes>
   <notes />
   <edges>
+    <edge source="com.design.factory.method.ApplicationImpl" target="com.design.factory.method.DocumentImpl">
+      <point x="-51.80000000000001" y="-93.0" />
+      <point x="434.65000000000003" y="385.0" />
+      <point x="402.5" y="385.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
     <edge source="com.design.factory.method.ApplicationImpl" target="com.design.factory.method.Application">
-      <point x="-110.80000000000001" y="-70.0" />
-      <point x="312.1571428571429" y="360.0" />
-      <point x="138.5" y="360.0" />
-      <point x="0.0" y="70.0" />
+      <point x="-103.60000000000002" y="-93.0" />
+      <point x="382.85" y="385.0" />
+      <point x="124.0" y="385.0" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="com.design.factory.method.ApplicationImpl" target="com.design.factory.method.Document">
+      <point x="103.59999999999997" y="-93.0" />
+      <point x="590.05" y="385.0" />
+      <point x="569.5" y="385.0" />
+      <point x="569.5" y="171.0" />
+      <point x="567.45" y="171.0" />
+      <point x="58.39999999999998" y="70.5" />
     </edge>
     <edge source="com.design.factory.method.DocumentImpl" target="com.design.factory.method.Document">
-      <point x="0.0" y="-70.0" />
-      <point x="383.5" y="170.0" />
-      <point x="409.15714285714284" y="170.0" />
-      <point x="-34.60000000000002" y="70.0" />
+      <point x="0.0" y="-82.0" />
+      <point x="402.5" y="171.0" />
+      <point x="479.8500000000001" y="171.0" />
+      <point x="-29.19999999999999" y="70.5" />
+    </edge>
+    <edge source="com.design.factory.method.Application" target="com.design.factory.method.Document">
+      <point x="0.0" y="-70.5" />
+      <point x="124.0" y="161.0" />
+      <point x="450.6500000000001" y="161.0" />
+      <point x="-58.39999999999998" y="70.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="164.0" y="330.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="164.0" y="370.5" />
   <SelectedNodes />
   <Categories>
     <Category>Constructors</Category>
     <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Fields</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
   <VISIBILITY>private</VISIBILITY>
