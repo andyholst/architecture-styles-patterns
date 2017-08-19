@@ -28,15 +28,14 @@ import com.design.component.PortImpl;
 import com.design.pipefilters.filters.ClientComponent;
 import com.design.pipefilters.filters.CoreComponent;
 import com.design.pipefilters.pipe.Pipe;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.concurrent.TimeoutException;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class PipeFilterTestCase {
 
@@ -61,7 +60,7 @@ public class PipeFilterTestCase {
         assertNotNull(coreComponent.getPort());
         assertNotNull(coreComponent.getConnector());
 
-        Assert.assertEquals("", coreComponent.getMessage());
+        assertEquals("", coreComponent.getMessage());
 
         clientComponent.start();
 
@@ -85,10 +84,10 @@ public class PipeFilterTestCase {
             }
         }
 
-        Assert.assertEquals(true, coreComponent.isPipeClosed());
-        Assert.assertEquals(false, coreComponent.getMessage().isEmpty());
+        assertEquals(true, coreComponent.isPipeClosed());
+        assertEquals(false, coreComponent.getMessage().isEmpty());
 
-        Assert.assertEquals(message, coreComponent.getMessage());
+        assertEquals(message, coreComponent.getMessage());
     }
 
     @Test
@@ -104,7 +103,7 @@ public class PipeFilterTestCase {
         assertNotNull(coreComponent.getPort());
         assertNotNull(coreComponent.getConnector());
 
-        Assert.assertEquals("", coreComponent.getMessage());
+        assertEquals("", coreComponent.getMessage());
 
         coreComponent.start();
 
@@ -117,7 +116,7 @@ public class PipeFilterTestCase {
             }
         }
 
-        Assert.assertEquals(true, coreComponent.isPipeClosed());
-        Assert.assertEquals(true, coreComponent.getMessage().isEmpty());
+        assertEquals(true, coreComponent.isPipeClosed());
+        assertEquals(true, coreComponent.getMessage().isEmpty());
     }
 }
