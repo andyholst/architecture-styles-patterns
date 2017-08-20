@@ -11,7 +11,7 @@ you can view the uml diagrams of the implementations. There will be architecture
  in the code.
 
 [![Build Status](https://travis-ci.org/MrAsimov/architecture-styles-patterns.svg?branch=master)](https://travis-ci.org/MrAsimov/architecture-styles-patterns)
-[Statistics of code quality & test coverage](https://sonarcloud.io/dashboard?id=com.design%3Aarchitecture-styles-patterns)
+[Sonar Statistics of the code](https://sonarcloud.io/dashboard?id=com.design%3Aarchitecture-styles-patterns)
 [![Coverage Status](https://coveralls.io/repos/github/MrAsimov/architecture-styles-patterns/badge.svg?branch=master)](https://coveralls.io/github/MrAsimov/architecture-styles-patterns?branch=master)
 
 # Table of Contents
