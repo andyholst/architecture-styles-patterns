@@ -136,7 +136,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Prototype](./prototype/README.md)
 
-[Singleton](./README.md) - TODO
+[Singleton](./singleton/README.md)
 
 ## Structural patterns - Composition of classes or objects <a name="structural"></a>
 

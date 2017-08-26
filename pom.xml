@@ -41,6 +41,7 @@
         <module>monolithic-application</module>
         <module>build</module>
         <module>prototype</module>
+        <module>singleton</module>
     </modules>
     <packaging>pom</packaging>
     <inceptionYear>2017</inceptionYear>
