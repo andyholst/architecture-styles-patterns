@@ -24,6 +24,7 @@
 
 package com.design.factory.method;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -32,14 +33,13 @@ public class DocumentImplTestCase {
 
     private Document document;
 
-    // Seems to be a bug in junit5 atm with @BeforeEach annotation
+    @BeforeEach
     void init() {
         document = new DocumentImpl();
     }
 
     @Test
     public void testOpen() throws Exception {
-        init();
         assertEquals(null, document.getState());
         document.open();
         assertEquals(DocumentImpl.DocumentEnum.OPEN, DocumentImpl.DocumentEnum.valueOf(document.getState()));
@@ -47,7 +47,6 @@ public class DocumentImplTestCase {
 
     @Test
     public void testClose() throws Exception {
-        init();
         assertEquals(null, document.getState());
         document.close();
         assertEquals(DocumentImpl.DocumentEnum.CLOSED, DocumentImpl.DocumentEnum.valueOf(document.getState()));
@@ -55,7 +54,6 @@ public class DocumentImplTestCase {
 
     @Test
     public void testSave() throws Exception {
-        init();
         assertEquals(null, document.getState());
         document.save();
         assertEquals(DocumentImpl.DocumentEnum.SAVED, DocumentImpl.DocumentEnum.valueOf(document.getState()));
@@ -63,7 +61,6 @@ public class DocumentImplTestCase {
 
     @Test
     public void testRevert() throws Exception {
-        init();
         assertEquals(null, document.getState());
         document.revert();
         assertEquals(DocumentImpl.DocumentEnum.REVERTED, DocumentImpl.DocumentEnum.valueOf(document.getState()));
