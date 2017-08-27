@@ -4,17 +4,39 @@
   <OriginalElement>com.design.builder</OriginalElement>
   <nodes>
     <node x="0.0" y="267.0">com.design.builder.SoldierBuilder</node>
-    <node x="212.52083333333334" y="0.0">com.design.builder.Soldier</node>
+    <node x="322.0" y="755.0">com.design.builder.Horse</node>
     <node x="174.60416666666666" y="424.0">com.design.builder.KnightBuilder</node>
+    <node x="212.52083333333334" y="0.0">com.design.builder.Soldier</node>
+    <node x="0.0" y="755.0">com.design.builder.AnimalBuilder</node>
+    <node x="272.5" y="879.0">com.design.builder.HorseBuilder</node>
+    <node x="363.5375" y="631.0">com.design.builder.Animal</node>
     <node x="176.0" y="212.0">com.design.builder.Knight</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="com.design.builder.SoldierBuilder" target="com.design.builder.Soldier">
-      <point x="0.0" y="-26.0" />
-      <point x="78.0" y="192.0" />
-      <point x="239.64583333333334" y="192.0" />
-      <point x="-81.375" y="81.0" />
+    <edge source="com.design.builder.AnimalBuilder" target="com.design.builder.Animal">
+      <point x="0.0" y="-37.0" />
+      <point x="151.0" y="735.0" />
+      <point x="393.1625" y="735.0" />
+      <point x="-88.875" y="37.0" />
+    </edge>
+    <edge source="com.design.builder.HorseBuilder" target="com.design.builder.AnimalBuilder">
+      <point x="-60.400000000000006" y="-37.0" />
+      <point x="363.1" y="849.0" />
+      <point x="226.5" y="849.0" />
+      <point x="75.5" y="37.0" />
+    </edge>
+    <edge source="com.design.builder.KnightBuilder" target="com.design.builder.Knight">
+      <point x="-35.25" y="-81.0" />
+      <point x="280.35416666666663" y="399.0" />
+      <point x="284.5" y="399.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="com.design.builder.HorseBuilder" target="com.design.builder.Horse">
+      <point x="0.0" y="-37.0" />
+      <point x="423.5" y="859.0" />
+      <point x="440.5" y="859.0" />
+      <point x="0.0" y="37.0" />
     </edge>
     <edge source="com.design.builder.Knight" target="com.design.builder.Soldier">
       <point x="0.0" y="-81.0" />
@@ -22,36 +44,48 @@
       <point x="293.89583333333337" y="192.0" />
       <point x="-27.125" y="81.0" />
     </edge>
+    <edge source="com.design.builder.Horse" target="com.design.builder.Animal">
+      <point x="0.0" y="-37.0" />
+      <point x="440.5" y="735.0" />
+      <point x="452.4125" y="735.0" />
+      <point x="-29.625" y="37.0" />
+    </edge>
+    <edge source="com.design.builder.SoldierBuilder" target="com.design.builder.Soldier">
+      <point x="0.0" y="-26.0" />
+      <point x="78.0" y="192.0" />
+      <point x="239.64583333333334" y="192.0" />
+      <point x="-81.375" y="81.0" />
+    </edge>
+    <edge source="com.design.builder.HorseBuilder" target="com.design.builder.Animal">
+      <point x="60.39999999999998" y="-37.0" />
+      <point x="483.9" y="849.0" />
+      <point x="569.5" y="849.0" />
+      <point x="569.5" y="735.0" />
+      <point x="511.6625" y="735.0" />
+      <point x="29.625" y="37.0" />
+    </edge>
     <edge source="com.design.builder.KnightBuilder" target="com.design.builder.SoldierBuilder">
-      <point x="-105.75" y="-92.5" />
+      <point x="-105.75" y="-81.0" />
       <point x="209.85416666666666" y="399.0" />
       <point x="78.0" y="399.0" />
       <point x="0.0" y="26.0" />
     </edge>
     <edge source="com.design.builder.KnightBuilder" target="com.design.builder.Soldier">
-      <point x="105.75" y="-92.5" />
-      <point x="421.35416666666663" y="399.0" />
-      <point x="414.5" y="399.0" />
-      <point x="414.5" y="182.0" />
-      <point x="402.39583333333337" y="182.0" />
-      <point x="81.375" y="81.0" />
-    </edge>
-    <edge source="com.design.builder.KnightBuilder" target="com.design.builder.Knight">
-      <point x="-35.25" y="-92.5" />
-      <point x="280.35416666666663" y="399.0" />
-      <point x="284.5" y="399.0" />
-      <point x="0.0" y="81.0" />
+      <point x="35.25" y="-81.0" />
+      <point x="350.85416666666663" y="399.0" />
+      <point x="403.5" y="399.0" />
+      <point x="403.5" y="192.0" />
+      <point x="348.14583333333337" y="192.0" />
+      <point x="27.125" y="81.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="273.0" y="308.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="454.0" y="647.5" />
   <SelectedNodes>
     <node>com.design.builder.KnightBuilder</node>
   </SelectedNodes>
   <Categories>
-    <Category>Constructors</Category>
-    <Category>Methods</Category>
     <Category>Inner Classes</Category>
-    <Category>Fields</Category>
+    <Category>Methods</Category>
   </Categories>
   <SCOPE>Production</SCOPE>
   <VISIBILITY>public</VISIBILITY>

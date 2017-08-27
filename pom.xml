@@ -42,6 +42,7 @@
         <module>build</module>
         <module>prototype</module>
         <module>singleton</module>
+        <module>adapter</module>
     </modules>
     <packaging>pom</packaging>
     <inceptionYear>2017</inceptionYear>

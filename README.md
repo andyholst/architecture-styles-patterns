@@ -140,7 +140,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 ## Structural patterns - Composition of classes or objects <a name="structural"></a>
 
-[Adapter](./README.md) - TODO
+[Adapter](./adapter/README.md)
 
 [Bridge](./README.md) - TODO
 

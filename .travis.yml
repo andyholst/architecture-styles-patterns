@@ -26,6 +26,8 @@ addons:
     organization: mrasimov-github
     token:
       secure: PJ15ATN6dYpLPdDV7GAuRE8xIqx8Ki4t+CbfQ3ZF7clFzGAnzmfewKMeTQQdxA8RmFRe+PzaxREhkQTlcuvSlo1UvgV/F9roU7gab3vyLlehx6/ohLA0XszzvYflScWxSXGUTRGDs6XpQ1yitn3ON4Lxua5YI2y0Xr/XB8GmD9pbsVrANT5hE6DRAyTPdfOhXgEWHTtZWA7dL+qOQgod+MMo5q16kGqoAJLcklDveLm/WLDZtTrswV96IFPD34oTOTjcuRHrc+wOlA/+1FZ02IwKF58nyTdn2icikrcCFFB3pp6UOit1PNCTaF99+CoIjxV7eUDpod7IDL+mHsBtnkwk6le36vcHeBbrIKoMnq+Cnx7qPyich4alS+F2YMIiUazM0TlAoc9wkfxTYw/2GzSG+h7vlNI3MkquQ25QOSnTmWMNHaQKEs35voXkMp6QLuxyXEwRii+DMOWDdtaphWIC1GDdUV3daahidyRS007P8LNIEUYSqAWqSGjOniwIeFy5mMfQOW+51gV6cI8yYttFLXAT90+glRMgdQn8sQshl+NtTwqNSjkgJys9VRUupam9cMIxPIz0ZMU7OfrL+ggnmEni/ZdTolXyniqy5NjTGi0nrf7z0g4FEP9RH8rvwX5E/G61MoVgPcAFu2vOKuGFV3jE08UgAduWbXcPmj4=
+    branches:
+      - master
 
 script:
 #- mvn test -Pcoverage coveralls:report
