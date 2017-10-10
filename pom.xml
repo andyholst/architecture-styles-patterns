@@ -43,6 +43,7 @@
         <module>prototype</module>
         <module>singleton</module>
         <module>adapter</module>
+        <module>bridge</module>
     </modules>
     <packaging>pom</packaging>
     <inceptionYear>2017</inceptionYear>

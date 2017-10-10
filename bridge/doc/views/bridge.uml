@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.design.bridge</OriginalElement>
+  <nodes>
+    <node x="32.625" y="306.0">com.design.bridge.DrawRectangleTest</node>
+    <node x="5.5" y="0.0">com.design.bridge.DrawingAPI</node>
+    <node x="0.0" y="204.0">com.design.bridge.RectangleShape</node>
+    <node x="48.25" y="102.0">com.design.bridge.Shape</node>
+    <node x="219.25" y="102.0">com.design.bridge.DrawingApiImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.design.bridge.DrawRectangleTest" target="com.design.bridge.RectangleShape">
+      <point x="-92.0" y="-37.0" />
+      <point x="78.625" y="281.0" />
+      <point x="75.5" y="281.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.design.bridge.DrawingApiImpl" target="com.design.bridge.DrawingAPI">
+      <point x="0.0" y="-26.0" />
+      <point x="344.75" y="77.0" />
+      <point x="225.125" y="77.0" />
+      <point x="94.125" y="26.0" />
+    </edge>
+    <edge source="com.design.bridge.RectangleShape" target="com.design.bridge.DrawingAPI">
+      <point x="-37.75" y="-26.0" />
+      <point x="-94.125" y="26.0" />
+    </edge>
+    <edge source="com.design.bridge.DrawRectangleTest" target="com.design.bridge.DrawingApiImpl">
+      <point x="92.0" y="-37.0" />
+      <point x="262.625" y="281.0" />
+      <point x="344.75" y="281.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="com.design.bridge.DrawRectangleTest" target="com.design.bridge.Shape">
+      <point x="0.0" y="-37.0" />
+      <point x="170.625" y="281.0" />
+      <point x="161.5" y="281.0" />
+      <point x="37.75" y="26.0" />
+    </edge>
+    <edge source="com.design.bridge.RectangleShape" target="com.design.bridge.Shape">
+      <point x="37.75" y="-26.0" />
+      <point x="113.25" y="179.0" />
+      <point x="86.0" y="179.0" />
+      <point x="-37.75" y="26.0" />
+    </edge>
+    <edge source="com.design.bridge.Shape" target="com.design.bridge.DrawingAPI">
+      <point x="-37.75" y="-26.0" />
+      <point x="86.0" y="77.0" />
+      <point x="99.625" y="77.0" />
+      <point x="-31.375" y="26.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="169.5" y="172.5" />
+  <SelectedNodes>
+    <node>com.design.bridge.DrawRectangleTest</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

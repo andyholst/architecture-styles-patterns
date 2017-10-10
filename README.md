@@ -142,7 +142,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Adapter](./adapter/README.md)
 
-[Bridge](./README.md) - TODO
+[Bridge](./bridge/README.md)
 
 [Composite](./README.md) - TODO
 
