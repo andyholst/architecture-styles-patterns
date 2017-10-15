@@ -64,7 +64,12 @@ class ComponentCompositeTest {
         assertEquals("Hello there.", sentenceComponent.getSymbol());
 
         assertEquals(3, sentenceComponent.getComponentList().size());
+    }
 
+    @Test
+    public void testNullReferencesForComponent() {
+        new SentenceComponent(null);
+        new WordComponent(null);
     }
 
     private WordComponent getWordComponent(String character) {

@@ -32,11 +32,13 @@ public class WordComponent extends Component {
     int endIndex;
 
     public WordComponent(List<CharacterComponent> characterComponentList) {
-        startIndex = getComponentList().size();
-        for (CharacterComponent characterComponent : characterComponentList) {
-            this.addComponent(characterComponent);
+        if (characterComponentList != null) {
+            startIndex = getComponentList().size();
+            for (CharacterComponent characterComponent : characterComponentList) {
+                this.addComponent(characterComponent);
+            }
+            endIndex = getComponentList().size();
         }
-        endIndex = getComponentList().size();
     }
 
     @Override
