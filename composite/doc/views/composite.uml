@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.design.composite</OriginalElement>
+  <nodes>
+    <node x="0.0" y="521.0">com.design.composite.SentenceComponent</node>
+    <node x="103.90909090909088" y="0.0">com.design.composite.SymbolComposition</node>
+    <node x="13.499999999999972" y="271.0">com.design.composite.CharacterComponent</node>
+    <node x="84.74999999999997" y="396.0">com.design.composite.WordComponent</node>
+    <node x="88.40909090909088" y="102.0">com.design.composite.Component</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.design.composite.SentenceComponent" target="com.design.composite.Component">
+      <point x="133.87499999999997" y="-37.5" />
+      <point x="312.375" y="496.0" />
+      <point x="455.25" y="496.0" />
+      <point x="455.25" y="241.0" />
+      <point x="357.9090909090909" y="241.0" />
+      <point x="115.5" y="59.5" />
+    </edge>
+    <edge source="com.design.composite.SentenceComponent" target="com.design.composite.CharacterComponent">
+      <point x="-44.62500000000003" y="-37.5" />
+      <point x="133.87499999999997" y="496.0" />
+      <point x="74.24999999999997" y="496.0" />
+      <point x="-60.75" y="37.5" />
+    </edge>
+    <edge source="com.design.composite.Component" target="com.design.composite.SymbolComposition">
+      <point x="-77.0" y="-59.5" />
+      <point x="165.40909090909088" y="77.0" />
+      <point x="173.15909090909088" y="77.0" />
+      <point x="-69.25" y="26.0" />
+    </edge>
+    <edge source="com.design.composite.WordComponent" target="com.design.composite.CharacterComponent">
+      <point x="-90.0" y="-37.5" />
+      <point x="174.74999999999997" y="371.0" />
+      <point x="195.74999999999997" y="371.0" />
+      <point x="60.75" y="37.5" />
+    </edge>
+    <edge source="com.design.composite.SymbolComposition" target="com.design.composite.Component">
+      <point x="69.25" y="26.0" />
+      <point x="311.6590909090909" y="77.0" />
+      <point x="319.4090909090909" y="77.0" />
+      <point x="77.0" y="-59.5" />
+    </edge>
+    <edge source="com.design.composite.WordComponent" target="com.design.composite.Component">
+      <point x="90.0" y="-37.5" />
+      <point x="354.75" y="251.0" />
+      <point x="280.9090909090909" y="251.0" />
+      <point x="38.5" y="59.5" />
+    </edge>
+    <edge source="com.design.composite.SentenceComponent" target="com.design.composite.WordComponent">
+      <point x="44.62499999999997" y="-37.5" />
+      <point x="223.12499999999997" y="496.0" />
+      <point x="264.75" y="496.0" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="com.design.composite.CharacterComponent" target="com.design.composite.Component">
+      <point x="0.0" y="-37.5" />
+      <point x="134.99999999999997" y="251.0" />
+      <point x="203.90909090909088" y="251.0" />
+      <point x="-38.5" y="59.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="278.5" y="372.5" />
+  <SelectedNodes>
+    <node>com.design.composite.Component</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

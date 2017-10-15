@@ -144,7 +144,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Bridge](./bridge/README.md)
 
-[Composite](./README.md) - TODO
+[Composite](./composite/README.md)
 
 [Decorator](./README.md) - TODO
 
