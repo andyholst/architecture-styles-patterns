@@ -31,10 +31,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ComponentTest {
-
-    List<WordComponent> wordComponentList;
-    List<SentenceComponent> sentenceComponentList;
+class ComponentCompositeTest {
 
     @Test
     public void testCharacter() {
