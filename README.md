@@ -146,7 +146,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Composite](./composite/README.md)
 
-[Decorator](./README.md) - TODO
+[Decorator](./decorator/README.md)
 
 [Facade](./README.md) - TODO
 
