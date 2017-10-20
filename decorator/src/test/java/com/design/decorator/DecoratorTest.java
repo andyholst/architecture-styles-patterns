@@ -37,7 +37,14 @@ class DecoratorTest {
 
         assertEquals("textview", textView.getPrimitive());
 
-        Decorator decorator = new DecoratorImpl(textView);
+        Decorator decorator = new Decorator(textView) {
+        };
+
+        decorator.draw();
+
+        assertEquals("textview", decorator.getPrimitive());
+
+        decorator = new DecoratorImpl(textView);
 
         assertEquals("textview", decorator.getPrimitive());
 
