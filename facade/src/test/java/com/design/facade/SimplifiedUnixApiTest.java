@@ -50,4 +50,15 @@ class SimplifiedUnixApiTest {
 
         assertTrue(result.isEmpty());
     }
+
+    @Test
+    public void findSpecificNotExistingFileAndGetNoContent() {
+
+        SimplifiedUnixApi simplifiedUnixApi = new SimplifiedUnixApi();
+
+        String result = simplifiedUnixApi.findFileAndGetContent("/etc/", "groupNotExisting");
+
+
+        assertTrue(result.isEmpty());
+    }
 }

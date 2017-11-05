@@ -26,11 +26,14 @@ package com.design.facade;
 
 import org.unix4j.Unix4j;
 
+import java.io.File;
+
 public class SimplifiedUnixApi {
-    public String findFileAndGetContent(String path, String file) {
+    public String findFileAndGetContent(String path, String name) {
         StringBuilder stringBuilder = new StringBuilder();
-        if (!Unix4j.find(path + file).toStringResult().isEmpty()) {
-            stringBuilder.append(Unix4j.cat(path + file).toStringResult());
+        File file = new File(path + name);
+        if (file.exists() && !file.isDirectory()) {
+            stringBuilder.append(Unix4j.cat(path + name).toStringResult());
         }
         return stringBuilder.toString();
     }
