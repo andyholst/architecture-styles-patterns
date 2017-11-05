@@ -39,4 +39,15 @@ class SimplifiedUnixApiTest {
 
         assertTrue(result.length() > 0);
     }
+
+    @Test
+    public void findSpecificFileAndGetNoContent() {
+
+        SimplifiedUnixApi simplifiedUnixApi = new SimplifiedUnixApi();
+
+        String result = simplifiedUnixApi.findFileAndGetContent("/dev/", "null");
+
+
+        assertTrue(result.isEmpty());
+    }
 }
