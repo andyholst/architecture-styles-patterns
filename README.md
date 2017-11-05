@@ -148,7 +148,7 @@ Design patterns that was mainly written by the Gang of Four guys.
 
 [Decorator](./decorator/README.md)
 
-[Facade](./README.md) - TODO
+[Facade](./facade/README.md)
 
 [Flyweight](./README.md) - TODO
 

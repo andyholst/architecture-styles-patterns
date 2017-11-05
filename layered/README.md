@@ -1,6 +1,7 @@
 # Layered structure
 
 ## Intent
+
 All complex systems experience the need to develop and evolve portions of the system independently. For this reason 
 the developers of the system need a clear and well-documented separation of concerns, so that modules of the  system 
 may be independently developed and maintained.

@@ -46,6 +46,7 @@
         <module>bridge</module>
         <module>composite</module>
         <module>decorator</module>
+        <module>facade</module>
     </modules>
     <packaging>pom</packaging>
     <inceptionYear>2017</inceptionYear>

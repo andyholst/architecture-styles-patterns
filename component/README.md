@@ -9,6 +9,7 @@ be empty, just for guidance of defining a component for developers if the design
 ![alt text](./doc/views/component.png "Component")
 
 ## Applicability
+
 To guide the developer to follow the architecture by defining the components as an interface (with accessible methods),
  and to prevent them to break the architecture by trying to modify the visibility level of the classes that implements 
  the component.

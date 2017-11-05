@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.design.facade.SimplifiedUnixApi</OriginalElement>
+  <nodes>
+    <node x="112.21428571428578" y="-220.28571428571422">com.design.facade.SimplifiedUnixApi</node>
+    <node x="0.0" y="0.0">org.unix4j.Unix4j</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.design.facade.SimplifiedUnixApi" target="org.unix4j.Unix4j">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="972.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="-65.57142857142867" y="-164.71428571428578" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
