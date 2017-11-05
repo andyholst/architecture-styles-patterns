@@ -36,7 +36,6 @@ class SimplifiedUnixApiTest {
 
         String result = simplifiedUnixApi.findFileAndGetContent("/etc/", "group");
 
-
         assertTrue(result.length() > 0);
     }
 
@@ -46,7 +45,6 @@ class SimplifiedUnixApiTest {
         SimplifiedUnixApi simplifiedUnixApi = new SimplifiedUnixApi();
 
         String result = simplifiedUnixApi.findFileAndGetContent("/dev/", "null");
-
 
         assertTrue(result.isEmpty());
     }
@@ -58,6 +56,15 @@ class SimplifiedUnixApiTest {
 
         String result = simplifiedUnixApi.findFileAndGetContent("/etc/", "groupNotExisting");
 
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
+    public void findJustADirectoryAndGetNoContent() {
+
+        SimplifiedUnixApi simplifiedUnixApi = new SimplifiedUnixApi();
+
+        String result = simplifiedUnixApi.findFileAndGetContent("/etc", "");
 
         assertTrue(result.isEmpty());
     }
